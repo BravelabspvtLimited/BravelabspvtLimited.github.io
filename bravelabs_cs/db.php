@@ -1,9 +1,9 @@
 <?php
 
 DEFINE ('DB_HOST', 'localhost');
-DEFINE ('DB_USER', '$$$');
-DEFINE ('DB_PASSWORD', '$$$');
-DEFINE ('DB_NAME', 'futuremed_users');
+DEFINE ('DB_USER', 'hirakwul_hkc');
+DEFINE ('DB_PASSWORD', 'Abacus249317');
+DEFINE ('DB_NAME', 'hirakwul_portfolio');
 
 //Make Connection
 
