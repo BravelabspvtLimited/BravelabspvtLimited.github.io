@@ -1,0 +1,199 @@
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0,174,239);
+    background: rgba(0, 174, 239, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 174, 239, 0.9);
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+
+
+#howdo
+{
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+#overlay
+{
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 5%;
+    height: 100%;
+    
+    
+}
+
+html, body
+{
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    
+    
+}
+
+#leadtexthead
+{
+    font-size: 60px;
+    font-weight: 900;
+    color: #2984a0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#leadtext
+{
+    font-size: 20px;
+    font-weight: 700;
+    color: #103d4b;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+#subtext
+{
+    font-size: 15px;
+    text-align: center;
+        
+}
+
+
+.form-title
+{
+    background-color: #50a2be;
+    text-align: center;
+    padding: 2%;
+    color: white;
+    
+    
+}
+
+#leadform
+{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 5%;
+    height: 420px;
+    
+}
+
+#leadbutton
+{
+    height: 50px;
+    border-radius: 30px;
+    
+}
+
+#leadbutton2
+{
+    text-transform: uppercase;
+    height: 50px;
+    border-radius: 30px;
+    
+}
+
+.form-control
+{
+    height: 50px;
+    border-radius: 12px;
+}
+
+
+.form-row
+{
+    padding: 2%;
+    
+
+}
+
+
+#overlay2subtext
+{
+    font-size: 17px;
+    text-align: justify;
+}
+
+
+#howdo
+{
+    font-size: 26px;
+    color: #50a2be;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+    
+}
+
+#overlay2one
+{
+   
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #50a2be;
+    
+    
+}
+
+#overlay2one > p
+{
+    font-size: 28px;
+    
+}
+
+
+#overlay2two
+{
+    text-align: center;
+    font-size: 17px;
+    
+}
