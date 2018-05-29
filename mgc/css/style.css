@@ -111,8 +111,11 @@ html, body
 {
     background-color: #50a2be;
     text-align: center;
-    padding: 2%;
+    padding: 1%;
     color: white;
+    font-size: 16px;
+    padding-top: 3%;
+    padding-bottom: 3%;
     
     
 }
