@@ -1,0 +1,83 @@
+#wholebody
+{
+    width: 1280px;
+    align-content: center;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+
+#overlay
+{
+    background-image: url(../images/overlayimg.png);
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-position:left;
+    background-size: cover;
+    padding-bottom: 5%;
+    height: 460px;
+    
+    
+    
+}
+
+
+#leadform
+{
+    background-color: #f9f9f9;
+    padding: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+    height: auto;
+    
+}
+
+
+.form-control
+{
+   
+    border-radius: 5px;
+}
+
+
+.form-row
+{
+    padding: 2%;
+    
+
+}
+
+
+#c
+    {
+        font-weight: 600;
+        
+    
+    }
+
+
+#c2
+    {
+        padding-top: 5%;
+        color: #28839e;
+        font-weight: 600;
+    
+    
+    }
+
+.numbercircle
+{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    
+    background: #fff;
+    border: 1px solid #666;
+    color: #666;
+    text-align: center;
+    
+    font-size: 14px;
+    
+    
+}
