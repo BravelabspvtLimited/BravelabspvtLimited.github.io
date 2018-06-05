@@ -1106,6 +1106,8 @@ input:-webkit-autofill:focus {
 #aboutinfo
 {
     font-size: 18px;
+    text-align: center;
+    padding: 2%;
 
 }
 

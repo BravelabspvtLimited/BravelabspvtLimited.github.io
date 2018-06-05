@@ -119,12 +119,29 @@ $(".titleanim").each(function(index, element){
 })
    
     
+
+//    
     
+    var controller7 = new ScrollMagic.Controller();
     
+    var animate32a = new TimelineMax();
+    animate32a
+    .from("#ctitle", 0.4, {autoAlpha:0, x:"-45%", y:"0"}, 0.2)
+    .from(".caption-photo one", 0.6, {autoAlpha:0, x:"45%", y:"0"}, 0.2)
+    ;
     
+    var titleScene = new ScrollMagic.Scene(
+        {
+            triggerElement: '#ctitle',
+            triggerHook: 0.6
+            
+        }
     
+    )
+    .setTween(animate32a)
+    .addTo(controller7);
     
-    
+    ////
     
     var controller1 = new ScrollMagic.Controller();
     
@@ -176,23 +193,7 @@ $(".titleanim").each(function(index, element){
     
     
     
-    
-    //
-    
-    var controllerdemi = new Scrollmagic.Controller();
-    
-    var animate32a = new TimelineMax();
-    animate32a
-    .from("#ctitle", 0.4, {autoAlpha:0, x:"-45%", y:"0"}, 0.2)
-    .from("#capdesc", 0.6, {autoAlpha:0, x:"0", y: "30%"}, 0.4)
-    .from
-    
-    
-    
-    
-    
-    
-    //
+   //
     
     
     
@@ -212,7 +213,7 @@ $(".titleanim").each(function(index, element){
         triggerHook: 0.2
     })
     .setTween(animatein2)
-    .addTo(controller1);
+    .addTo(controller2);
     
     //build a scene
     
