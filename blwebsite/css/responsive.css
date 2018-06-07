@@ -176,6 +176,11 @@ body {
         padding-left: 5%;
     }
 
+    #capdesc
+    {
+        font-size: 15px;
+    }
+    
     #dwcopy
     {
         font-size: 15px;

@@ -103,7 +103,7 @@ $(document).ready(function(){
     })
     .setTween(animatein0)
     .addTo(controller0);
-    */
+    */   
     
     
     
@@ -178,7 +178,6 @@ $(".titleanim").each(function(index, element){
     animatein2a
     .from('#sode2 img', 3, {autoAlpha:0, x:"-50%", y:"0"},0.2)
     .from('.dt2', 0.6, {autoAlpha:0, x:"25%", y:"0"},0.2)
-    .from('#styleimg1', 0.8, {autoAlpha:0, ease:Power1.easeIn},0.4)
     .from('.caption-title1', 0.6,{autoAlpha:0, x:"0", y:"15%"}, 0.6)
     .from('#dwcopy2', 0.6, {autoAlpha:0, x:"0", y:"15%"}, 0.6)
     ;
@@ -203,7 +202,6 @@ $(".titleanim").each(function(index, element){
     animatein2
     .from('#sode img', 3, {autoAlpha:0, x:"50%", y:"0"},0.2)
     .from('.dt', 0.6, {autoAlpha:0, x:"-25%", y:"0"},0.2)
-    .from('#styleimg', 0.8, {autoAlpha:0, ease:Power1.easeIn},0.4)
     .from('#dwcopy', 0.6, {autoAlpha:0, x:"0", y:"15%"}, 0.6)
     .from('#dwicon', 1.2, {autoAlpha:0, x:"0", y:"40%"}, 1.2)
     ;
@@ -215,14 +213,62 @@ $(".titleanim").each(function(index, element){
     .setTween(animatein2)
     .addTo(controller2);
     
+    //build a scene alt
+    
+    var controller47 = new ScrollMagic.Controller();
+    var animatein47 = new TimelineMax();
+    animatein47
+    .from('#sode3 img', 3, {autoAlpha:0, x:"50%", y:"0"}, 0.2)
+    .from('.dt3', 0.6, {autoAlpha:0, x:"-25%", y:"0"},0.4)
+    .from('#dwcopy3', 0.8, {autoAlpha: 0, x:"0", y:'20%'}, 0.6)
+    
+    var randomScene = new ScrollMagic.Scene(
+    
+        {
+            triggerElement: '#whyus3',
+            triggerHook: 0.5
+        
+        
+        
+        }
+    
+    
+    
+    )
+    .setTween(animatein47)
+    .addTo(controller47);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     //build a scene
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     var controller3 = new ScrollMagic.Controller();
     var animatein3 = new TimelineMax();
     animatein3
     .from('#solutionst', 0.6, {autoAlpha:0, x:"0", y:"80%"}, 0.4)
-    .from('#styleimg2', 0.6, {autoAlpha:0, ease:Power1.easeIn},0.4)
     .from('.single-blog', 1.2, {autoAlpha:0, x:"0", y:"80%"}, 0.8)
     //.from('.blog-photo', 0.8, {autoAlpha:0, ScaleX:0, ScaleY:0}, 1.6)
     .from('.blog-content', 0.6, {autoAlpha:0, x:'0', y:'80%'}, 0.8)

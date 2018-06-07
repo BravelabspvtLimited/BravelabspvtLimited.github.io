@@ -57,12 +57,15 @@ a {
 }
 
 
-/* .titleanim {
-  position:absolute;    
-  left:-100px;
-  ;
+
+
+
+.titleanim {
+  border-bottom: solid 8px #697DFF;
+    
+    
 }
- */
+
 
 
 
@@ -1002,6 +1005,12 @@ input:-webkit-autofill:focus {
    font-size: 50px;
 }
 
+#capdesc
+{
+    font-size: 18px;
+}
+
+
 
 #dwcopy
 {
@@ -1166,6 +1175,10 @@ input:-webkit-autofill:focus {
     padding-left: 5%;
 }
 
+.dt3
+{
+    font-size: 40px;
+}
 
 #dw1
 {
@@ -1180,11 +1193,40 @@ input:-webkit-autofill:focus {
     padding-left: 15%;
 }
 
+
+#dw3
+{
+    padding-bottom: 2%;
+    padding-left: 15%;
+    
+    
+}
+
+
 #dwcopy
 {
     font-size: 20px;
     
 }
+
+
+#dwcopy3
+{
+    
+    font-size: 20px;
+    
+}
+
+
+#sode3
+{
+    
+    margin-top: 22%;
+    
+}
+
+
+
 
 #dwicon
 {
@@ -1263,8 +1305,8 @@ input:-webkit-autofill:focus {
 #dwimg
 
 {
-    max-width: 120px;
-    margin-left: 130px;
+    max-width: 90px;
+    margin-left: 90px;
     
 }
 
@@ -1291,7 +1333,7 @@ input:-webkit-autofill:focus {
 #taoofsix1
 {
     color:white; 
-    font-size:16px;
+    font-size:17px;
     padding: 5%;
   
 }
@@ -1299,12 +1341,10 @@ input:-webkit-autofill:focus {
 #taoofsix2
 {
     color:white; 
-    font-size:16px;
+    font-size:17px;
     padding: 5%;
   
 }
-
-
 
 
 
