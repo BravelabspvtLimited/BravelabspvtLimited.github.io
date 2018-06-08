@@ -175,6 +175,16 @@ body {
         padding-bottom: 2%;
         padding-left: 5%;
     }
+    
+    
+    #dw3
+{
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
 
     #capdesc
     {
@@ -188,6 +198,12 @@ body {
     }
     
     #dwcopy2
+    {
+        font-size: 15px;
+    }
+    
+    
+    #dwcopy3
     {
         font-size: 15px;
     }

@@ -454,7 +454,7 @@ input:-webkit-autofill:focus {
 
 .client-area,
 .header-area {
-    background: #000000 url('images/parallaxgif3.gif') no-repeat scroll center center / cover;
+    background: #000000 url('images/parallaxgif3.png') no-repeat scroll center center / cover;
 }
 
 /*
@@ -1205,7 +1205,7 @@ input:-webkit-autofill:focus {
 
 #dwcopy
 {
-    font-size: 20px;
+    font-size: 18px;
     
 }
 
@@ -1213,7 +1213,7 @@ input:-webkit-autofill:focus {
 #dwcopy3
 {
     
-    font-size: 20px;
+    font-size: 18px;
     
 }
 

@@ -366,6 +366,7 @@ $(".titleanim").each(function(index, element){
     .from('#google', 1, {x:'10%', y:'-50%', ease:Bounce.easeOut}, 3.1)
     .from('#linkedin', 1, {x:'15%', y:'-50%', ease:Bounce.easeOut}, 3.4)
     .from('#github', 1, {x:'20%', y:'-50%', ease:Bounce.easeOut}, 3.7)
+    .from('#gps', 1, {autoAlpha:0, x:'0', y:'50%', ease:Bounce.easeOut}, 3.9)
     
     ;
     
