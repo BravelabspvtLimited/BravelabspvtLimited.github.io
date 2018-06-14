@@ -1,0 +1,1050 @@
+/*
+ * This code is done using html5boilerplate, bootstrap 4 and other fixes.
+ * We at dzineden use this code as the base for our websites and apps,
+ */
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+/*font-family: 'Lato', sans-serif;*/
+
+html {font-size: 1em;}
+body {
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #252525;
+}
+p {margin-bottom: 1.3em;}
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.414em 0 0.5em;
+  font-weight: 400;
+  line-height: 1.2;
+  font-family: 'Lato', sans-serif;
+  color:#185287;
+}
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+h2 {font-size: 2.369em;}
+h3 {font-size: 1.777em;}
+h4 {font-size: 1.333em;}
+small, .font_small {font-size: 0.75em;}
+
+
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container{
+  margin:0 auto;
+  padding:0 15px;
+}
+@media(min-width:420px){
+  .container{
+
+  } 
+}
+@media(min-width:575px){
+  .container{
+    max-width: 565px;
+  } 
+}
+@media(min-width:768px){
+  .container{
+    max-width: 720px;
+  } 
+}
+@media(min-width:992px){
+  .container{
+    max-width: 960px;
+  }  
+}
+@media(min-width:1200px){
+  .container{
+    max-width: 1120px;
+  }
+}
+
+
+/*======== Style for Site Header =======*/
+
+.site-header{
+  width:100%;
+  position: relative;
+  background-color: #fff;
+-webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0, 0.4);
+-moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0, 0.4);
+box-shadow: 0px 2px 10px 0px rgba(0,0,0, 0.4); 
+}
+.site-logo-wrap{
+  padding:15px 30px;
+}
+.site-logo{
+  width:245px;
+  margin:auto;
+}
+.site-logo img{
+  width:100%;
+  display:block;
+}
+.site-nav{
+  /*padding:0 30px;*/
+  /*display: none;*/
+  position: absolute;
+  height:0px;
+  top:100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index:100;
+  background-color:#fff;
+  overflow: hidden;
+  transition: height 700ms; 
+  -webkit-transition: height 700ms; 
+  -moz-transition: height 700ms; 
+}
+.d_block{
+  display: block;
+  height:300px;
+  overflow: scroll;
+  -webkit-box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
+-moz-box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
+box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2); 
+}
+
+.site-nav ul{
+  margin:0;
+  padding:0;
+}
+.site-nav ul li{
+  list-style-type: none;
+  display: block;
+}
+.site-nav ul li a{
+  color:#707070;
+  text-transform:uppercase;
+  font-size:14px;
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  border-bottom:solid 1px #ebebeb;
+}
+.site-nav ul li a:hover{
+  background: #d9f7ff;
+  font-weight: 700;
+  color: #40a9eb;
+}  
+.contact-box{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  justify-content:flex-end;
+}
+.contact-us{
+  padding:0 15px;
+}
+.contact-us a{
+  color:#707070;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.contact-email-phone{
+  background-color:#0990d6;
+  background: linear-gradient(45deg, #2a71c0, #0991d6);
+  padding: 0 15px;
+}
+.contact-email-phone a{
+  display: block;
+  color:#ffffff;
+  text-decoration: none;
+}
+
+/* Hamburger Menu */
+.hamburger-btn {
+  background-color:#0990d6;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom:13px;
+  left:15px;
+  width: 44px;
+  height: 33px;
+  cursor: pointer;
+}
+.hamburger-btn span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 30px;
+  height: 3px;
+  border-radius:4px;
+  background-color: white;
+  margin:auto;
+  display:block;
+}
+
+.hamburger-btn span:nth-child(1) {
+  top: 5px;
+}
+.hamburger-btn span:nth-child(2) {
+  top:15px;
+}
+.hamburger-btn span:nth-child(3) {
+  top: 25px;
+}
+.contact-email-phone a{
+  margin:10px 0;
+}
+
+.site-nav.container{
+  max-width: 100%; 
+}
+
+
+@media(min-width:768px){
+  .site-header{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    z-index:300;
+  }
+  .site-logo-wrap {
+    padding: 15px 90px;
+  }
+  .hamburger-btn{
+    bottom:25px;
+  }
+  .contact-us{
+    padding-top:10px;
+  }
+}
+
+@media(min-width:992px){
+  .hamburger-btn{
+    display: none;
+  }
+  .site-logo-wrap {
+    padding: 20px 15px;
+  }   
+  /*.site-logo{
+    width:180px;
+  }*/
+  .site-nav{
+    display: block;
+    padding:24px 10px 0 0;
+    position: static;
+    height:auto;
+  }
+  .site-nav ul li{
+    display: inline-block;
+    padding:0 0 0 10px;
+  }
+  .site-nav ul li a{
+    display: inline-block;
+    font-size:14px;
+    border-bottom:none;
+    padding:0;
+  }
+  .site-nav ul li a:hover{
+    background:#fff;
+    font-weight: 400;
+    color: #40a9eb;
+  }
+  .site-nav.container{
+    max-width:960px; 
+  }
+}
+
+@media(min-width:1200px){ 
+  .site-nav ul li a{
+    font-size:14px;
+  }   
+  .site-nav.container{
+    max-width:1120px; 
+  }
+}
+
+@media(min-width:1300px){ 
+ .site-nav ul li a{
+    /*font-size:14px;*/
+  }    
+}
+
+@media(min-width:1345px){ 
+   .site-nav{
+    padding:30px 10px 0 0;
+  }  
+}
+@media(min-width:1900px){ 
+  .site-nav ul li{
+    display: inline-block;
+    padding:0 0 0 46px;
+  }
+}
+
+/*======== End Style for Site Header =======*/
+
+
+
+/*======= Style for Medgenome BNR =========*/
+
+.medgenome-bnr{
+  min-height:255px;
+  background-image:url(../img/medgenome-bnr-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+@media(min-width:768px){
+  .medgenome-bnr{
+    margin-top:80px;  
+  }
+}
+@media(min-width:992px){
+  .medgenome-bnr{
+    margin-top:90px;  
+  }
+}
+/*=======End Style for Medgenome BNR =========*/
+
+
+
+/*=======Style for Services Contant Section =======*/
+
+.services-contant-section {
+
+}
+.services-contant-box{
+  background-color: #fff;
+  /*min-height: 800px;*/
+  box-shadow: 0px 12px 40px 3px rgba(0,0,0, .1);
+  -webkit-box-shadow: 0px 12px 40px 3px rgba(0,0,0, .1);
+  -moz-box-shadow: 0px 12px 40px 3px rgba(0,0,0, .1);
+  position: relative;
+  top:-80px;
+}
+
+.unique-unlock-unprecedented-row{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction:column;
+  padding:20px; 
+  /*align-items: center;*/
+  background-color:#f8f8f8;
+}
+.uuu-col{
+  margin-bottom:25px;
+}
+
+.uuu-icon img{
+  /*width: 100%;*/
+  display: block;
+  margin:auto;
+}
+.uuu-text h2{
+  text-align: center;
+  color:#707070;
+  font-weight:700;
+  font-size:16px;
+  text-transform:uppercase;
+  max-width: 270px;
+  margin:10px auto;
+}
+.breadcrumbs-row{
+  background-color:#f1f1f1;  
+  padding:5px 20px;
+}
+.breadcrumbs-row ul{
+  margin:0;
+  padding:0;
+}
+.breadcrumbs-row ul li{
+  list-style-type:none;
+  display: inline-block;
+}
+.breadcrumbs-row ul li a{
+  color:#a1a1a1;
+  text-decoration: none; 
+  font-size:14px;
+}
+.breadcrumbs-row ul li span{
+  padding:0 5px;
+  color:#bcbcbc;
+}
+.breadcrumbs-row .active{
+  color:#40a9eb;
+}
+.mdgo-tab-main-wrap{
+  padding:25px 0;
+}
+.mdgo-tab-btn{
+  background-color:#efefef;
+  border-bottom:solid 1px #e1e1e1; 
+  border-top:solid 1px #e1e1e1; 
+  padding:20px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom:35px;
+}
+.mdgo-tab-btn h3{
+  margin:0;
+  font-size:18px;
+  padding-right: 30px;
+}
+.tab-arrow{
+  width: 0; 
+  height: 0; 
+  border-left: 12px solid transparent; 
+  border-right: 12px solid transparent; 
+  border-top: 12px solid #004d85;
+  border-top-left-radius:4px; 
+  border-top-right-radius:4px; 
+  border-bottom-left-radius:4px; 
+  border-bottom-right-radius:4px; 
+  position: absolute;
+  right:20px;
+  top:40%;
+  display: block;
+  transition:700ms; 
+  -webkit-transition:700ms; 
+  -moz-transition:700ms;
+}
+.tab-arrow.tab-arrow-top{
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+}
+.mdgo-tab-content-wrap{ 
+  padding:0 20px 25px;
+  display: none;
+  overflow: hidden;
+}
+.mdgo-tab-content-wrap p{
+  font-size:14px;
+  /*margin-top:0;*/
+}
+.ngs-services-content{
+  display: block;
+}
+
+.ngs-inner-tab-wrap{
+  padding:15px;
+  border:solid 1px #b5b5b5;
+}
+.ngs-inner-tab-btn{
+  padding:0;
+  margin:0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+}
+.ngs-inner-tab-btn li{
+  list-style-type:none;
+  display: block;
+  margin-bottom:10px;
+}
+.ngs-inner-tab-btn li a{
+  background-color:#efefef;
+  text-decoration:none;
+  font-size:14px;
+  color:#000;
+  text-align: center;
+  padding:10px 20px;
+  display: block;
+  height:58px;
+  position: relative;
+  font-weight: 700;
+}
+.ngs-inner-tab-btn li a span:nth-child(1){
+  padding:7px 0;
+  display:block;
+}
+.down-Arrow{
+  padding: 0;
+  width: 0; 
+  height: 0; 
+  border-left: 15px solid transparent; 
+  border-right: 15px solid transparent; 
+  border-top: 15px solid #3bb0d5; 
+  position: absolute;
+  right:0;
+  left:0;
+  margin:auto;
+  top:100%;
+  display: none;
+}
+.ngs-inner-tab-btn .active{
+  background-color:#3bb0d5;
+  color:#fff;
+}
+.ngs-inner-tab-btn .active .down-Arrow{
+  display: block; 
+}
+.ngs-inner-tab-content-wrap.active{
+  display: block;
+}
+.ngs-inner-tab-content-wrap{
+  display: none;
+  width:100%;
+}
+.ngs-inner-tab-content-wrap p{
+  color: #5ecda8;
+  font-weight:700;
+  font-size:18px;
+  text-align: center;
+  margin:0;
+}
+
+/*Start Table Style*/
+.table-container {
+  width: 100%;
+  margin:30px 0;   
+}
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+.table-container th,
+.table-container td {
+  padding:10px 15px;
+  /*background-color: rgba(255, 255, 255, 0.2);*/
+  color: #fff;
+}
+.table-container th {
+  text-align: left;
+}
+.table-container tbody{
+  /*background-color:gray;*/
+  width:100%; 
+}
+.table-container thead th {
+  background-color: #ddf2ff;
+  color:#40a9eb;
+  font-weight:700;
+  border:solid 1px #dce4e8;
+}
+/*.table-container tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}*/
+.table-container tbody td {
+  /*position: relative;*/
+  width: 33.33%;
+  color:#252525;
+  font-size:12px;
+  border:solid 1px #dce4e8;
+}
+.table-container tbody tr td:nth-child(1){
+  background-color: #e9f8ff;
+  color: #252525;
+  font-weight:700;
+  font-size:13px;
+}
+
+/*End of Table Styule*/
+
+
+.whole-genome-trans-tcr-nav ul{
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.whole-genome-trans-tcr-nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  background-color:#efefef;
+  border:solid 1px #dce4e8;
+  width:100%;
+}
+.whole-genome-trans-tcr-nav ul li a{
+  display: inline-block;
+  color:#7f7f7f;
+  padding:10px;
+  font-size: 14px;
+  text-decoration: none;
+  width:100%;
+  text-align: center;
+}
+.whole-genome-trans-tcr-nav ul li:hover{
+  background-color:#acacac;
+}
+.whole-genome-trans-tcr-nav ul li a:hover{
+  color:#fff;
+}
+.medgenome-row{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction:column;  
+}
+.medgenome-col .table-container{
+  margin:5px 0 30px;
+}
+.genome-exo-seq-inner-wrap h3{
+  font-size:16px;
+  font-weight:700;
+  margin:0;
+  color: #252525;
+}
+.genome-exo-seq-inner-wrap .table-container tbody td:nth-child(1){
+  width:35%;
+}
+.genome-exo-seq-inner-wrap .table-container tbody td:nth-child(2){
+  width:25%;
+}
+.genome-exo-seq-inner-wrap .table-container tbody td{
+  width:13.33%;
+}
+
+
+
+@media(min-width:575px){  
+  .whole-genome-trans-tcr-nav ul li{
+    width:50%;
+  }
+}
+@media(min-width:768px){
+  .mdgo-tab-btn h3{
+    font-size:25px;
+  }
+  .uuu-text h2{
+    font-size:18px;
+  }
+  .whole-genome-trans-tcr-nav ul li{
+    width:33.33%;
+  }
+}
+
+@media(min-width:992px){
+  .unique-unlock-unprecedented-row{
+    flex-direction:row; 
+    justify-content: space-between;
+    padding:0;
+  }
+  .uuu-col{
+    margin-bottom:0;
+    flex:1;
+    padding:20px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+  }
+  .uuu-col:nth-child(2){
+    border-left:solid 1px #ebebeb;
+    border-right:solid 1px #ebebeb;
+  }
+  .uuu-text{
+    padding-left: 20px;
+  }
+  .uuu-text h2{
+    margin:0;
+    text-align: left;
+    max-width:205px; 
+  }
+  .ngs-inner-tab-wrap{
+    padding: 30px;
+  }
+  .ngs-inner-tab-btn{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .ngs-inner-tab-btn li{
+    /*width:150px;*/
+    flex-basis: 201px;
+  }
+  .order-4{
+    order:4;
+  }
+  .order-1{
+    order:1;
+  }
+  .order-3{
+    order:3;
+  }
+  .order-2{
+    order:2;
+  }
+  .whole-genome-trans-tcr-nav ul li{
+    width:20%;
+  }
+  .medgenome-row{
+    flex-direction:row; 
+    justify-content:space-between;  
+  }
+  .medgenome-col{
+    flex-basis:49.2%;
+  }
+}
+
+@media(min-width:1200px){
+  .ngs-inner-tab-btn li{
+    /*width:150px;*/
+    flex-basis: 241px;
+  }
+}
+
+
+/*=======End Style for Services Contant Section =======*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======= Style for Footer =========*/
+
+.site-footer-section{
+  
+}
+.site-footer-section .site-logo{
+  width:170px;
+  margin:0;
+}
+
+.site-footer-section p{
+  color:#99a3ab;
+  /*opacity:;*/
+}
+.footer-col a, .footer-col li{
+  color:#99a3ab;
+}
+.footer-col a{
+  display: block;
+  margin-bottom:10px;
+  text-decoration: none;
+}
+.footer-col .address{
+  margin:0;
+  padding-left:20px;
+}
+.footer-col .address li{
+  list-style-type:none;
+}
+.site-footer-section h3{
+  color:#fff;
+  margin:20px 0 15px;
+  font-size:30px;
+}
+.footer-one{
+  background-color:#2e4253;
+  padding: 65px 0;
+}
+
+.footer-two{
+  background-color:#273b4a;
+  padding:13px 0;
+}
+
+.footer-row{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction:column;
+}
+
+.footer-nav{
+ margin:0;
+ padding:0; 
+}
+.footer-nav li{
+  list-style-type:none;
+  display: inline-block;
+  text-align: center;
+}
+.footer-nav li a{
+  font-size:14px;
+  display: inline-block; 
+  margin:1px 0 1px 0;
+  text-align: center;
+}
+.footer-two p{
+  font-size:14px;
+  /*text-align: center;*/
+}
+.footer-nav li span{
+  padding: 0 5px;
+  display: inline-block; 
+}
+
+
+@media(min-width:768px){  
+  .footer-row{
+    flex-direction: row;
+    justify-content: space-between;
+  } 
+  .footer-col{
+    flex:1;
+  }
+  .footer-one .footer-col:nth-child(2){
+    padding:0 20px;
+  }
+  .site-footer-section h3{
+    margin:0 0 15px;
+  }
+  .footer-two p{
+    text-align:right;
+    margin:0;
+  }
+}
+
+@media(min-width:992px){
+  .footer-one .footer-col:nth-child(1){
+    flex: 3;
+  }
+  .footer-one .footer-col:nth-child(1) p{
+    max-width:460px;
+  }
+  .footer-one .footer-col:nth-child(2){
+    padding:0 20px;
+  }
+}
+  
+/*======= End Style for Footer =========*/
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.hidden {
+    display: none !important;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+.invisible {
+    visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    p:first-letter,
+    div:first-letter,
+    blockquote:first-letter,
+    li:first-letter,
+    p:first-line,
+    div:first-line,
+    blockquote:first-line,
+    li:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
