@@ -105,7 +105,7 @@
       </div>
       <div class="mdgo-tab-content-wrap ngs-services-content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusamus asperiores voluptate, illum maiores esse officia perspiciatis, excepturi tempora vel itaque! Consectetur, placeat nihil voluptatibus minima rerum optio delectus ullam.</p>
-
+  
         <div class="ngs-inner-tab-wrap">
           <ul class="ngs-inner-tab-btn">
             <li class="order-2"><a href="#" trgt_link="libraryPrep"><span>Library Preparation</span><span class="down-Arrow"></span></a></li>
@@ -242,8 +242,33 @@
             </div>
           </div><!-- eo ngs-inner-tab-content-wrap -->
 
-          <div class="ngs-inner-tab-content-wrap" trgt_item="bioinformaticsAnalysis">
-            <table>Table 04</table>
+          <div class="ngs-inner-tab-content-wrap bioinformatics-analysis-content" trgt_item="bioinformaticsAnalysis">
+            <h3>WGS Germline variant calling Workflow</h3>
+            
+            <div class="wgs-workflow">
+              <img src="img/wgs-workflow.png" alt="WGS Germline variant calling Workflow">
+            </div>
+
+            <h3>MedGenome VariMAT – Variant deep annotation program</h3>
+            <ul class="varimat-list">
+              <li>Multi-stage annotation pipeline for more accurate, rapid discovery and annotation of germline and somatic variants in samples.?</li>
+              <li>One of the most comprehensive variant annotation tools in the world?</li>
+              <li>Integrated with disease databases - OMIM, HGMD, SwissVar, ClinVar, GWAS, OncoMD?</li>
+              <li>Integrated with ExAC, 1000G phase 3, dbSNP, EVS, 1KJP, MedVarDb databases.</li>
+            </ul>
+
+            <h3>Somatic Variant Calling and Annotation Pipeline</h3>
+
+            <div class="somatic-pipeline">
+              <img src="img/somatic-variant-pipeline.png" alt="Somatic Variant Calling and Annotation Pipeline">
+            </div>
+
+            <h3>Whole-Transcriptome Analysis Pipeline</h3>
+
+            <div class="whole-transcriptome-pipeline">
+              <img src="img/whole-transcriptome-pipeline.png" alt="whole transcriptome analysis pipeline">
+            </div> 
+      
           </div><!-- eo ngs-inner-tab-content-wrap -->
         </div><!-- eo ngs-inner-tab-wrap -->
 
@@ -396,14 +421,38 @@
                   <tr>
                     <td>Fresh or cells in sample prep agent</td>
                     <td>Fresh or cells in sample-prep agent</td>
-                    <td>Fresh or cells in sample-prep agent</td>
+                    <td>Fresh or cells in sample-prep agent</td>  
                     <td>Fresh or cells in sample-prep agent</td>
                     <td>Fresh or cells in sample-prep agent</td>
                   </tr>
                 </tbody>
               </table>
           </div>
+          <div class="medgenome-row">
+            <div class="medgenome-col">
+              <div class="metrics-btn">SNP Metrics</div>
+              <div class="metrics-chart-box">
+                <img src="img/snp-metrics.png" alt="snpMetrics">
+              </div>
+            </div>
+            <div class="medgenome-col">
+              <div class="metrics-btn">InDel Metrics</div>
+              <div class="metrics-chart-box">
+                <img src="img/indel-metrics.png" alt="indelMetrics">
+              </div>
+            </div>
+          </div>
+
+          <p class="chart-text">Figure 2 : Validation of WGS/WES pipelines using Gold Standard datasets</p>
+
+          <ul class="snv-nist-text">
+            <li><p>Sensitivity for SNV detection of our pipeline exceeded 99% at 30X-50X coverage and was over 99% for the detection of Indels at 50X coverage.</p></li>
+            <li><p>The NIST dataset provided the best sensitivity and precision primarily due to higher sequencing depth (~50X) and PCR-free library.</p></li>
+            <li><p>Our study on NA12878 gold standard results shows that our results are at par with industry standard and matches FDA challenge results.</p></li>
+          </ul>
         </div><!-- ngs-inner-tab-wrap -->
+
+        <p class="">We have recently added the 10X Chromium platform to our offerings and can perform single-cell Whole Genome Sequencing , and analysis as well as de-novo analysis using the 10X software solutions.</p>
 
       </div>
 
@@ -412,6 +461,101 @@
         <span class="tab-arrow"></span>
       </div>
       <div class="mdgo-tab-content-wrap whole-transcriptome-content">
+        <div class="whole-genome-trans-tcr-nav">
+          <ul>
+            <li><a href="#">About</a></li><li><a href="#">QC Report</a></li><li><a href="#">Informatics</a></li><li><a href="#">White paper</a></li><li><a href="#">Place and order</a></li>
+          </ul>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusamus asperiores voluptate, illum maiores esse officia perspiciatis, excepturi tempora vel itaque! Consectetur, placeat nihil voluptatibus minima rerum optio delectus ullam.</p>
+
+        <div class="ngs-inner-tab-wrap genome-exo-seq-inner-wrap">
+          <h3>Sample requirements and library prep information</h3>
+          <div class="table-container service-sample-library">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Service</th>
+                    <th>Sample Requirements</th>
+                    <th>Library Kit Used</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Frozen cell pellets</td>
+                    <td>Minimum 1 X 106 cells Minimum 1 X 106 cells (ship on dry ice)</td>
+                    <td>Minimum 1 X 106 cells (ship on dry ice)</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+
+          <h3>RNA analysis deliverables</h3>
+          <div class="medgenome-row">
+            <div class="medgenome-col">
+              <div class="table-container rna-analysis-delvr">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Standard Analysis Offerings</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Extracted Nucleic Acid</td>
+                    </tr>
+                    <tr>
+                      <td>Frozen Cell Pellets</td>
+                    </tr>
+                    <tr>
+                      <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
+                    </tr>
+                    <tr>
+                      <td>5 slides (10 μM thick) 250 mm2 surface area</td>
+                    </tr>
+                    <tr>
+                      <td>5 curls (10 μM thick)</td>
+                    </tr>
+                    <tr>
+                      <td>Fresh or cells in sample prep agent</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="medgenome-col">
+              <div class="table-container rna-analysis-delvr">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Advanced Analysis Offerings</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Extracted Nucleic Acid</td>
+                    </tr>
+                    <tr>
+                      <td>Frozen Cell Pellets</td>
+                    </tr>
+                    <tr>
+                      <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
+                    </tr>
+                    <tr>
+                      <td>5 slides (10 μM thick) 250 mm2 surface area</td>
+                    </tr>
+                    <tr>
+                      <td>5 curls (10 μM thick)</td>
+                    </tr>
+                    <tr>
+                      <td>Fresh or cells in sample prep agent</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div><!-- ngs-inner-tab-wrap -->
+
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusamus asperiores voluptate, illum maiores esse officia perspiciatis, excepturi tempora vel itaque! Consectetur, placeat nihil voluptatibus minima rerum optio delectus ullam.</p>
       </div>
 
@@ -420,13 +564,144 @@
         <span class="tab-arrow"></span>
       </div>
       <div class="mdgo-tab-content-wrap tcr-sequencing-content">
+         <div class="whole-genome-trans-tcr-nav">
+          <ul>
+            <li><a href="#">About</a></li><li><a href="#">QC Report</a></li><li><a href="#">Informatics</a></li><li><a href="#">White paper</a></li><li><a href="#">Place and order</a></li>
+          </ul>
+        </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusamus asperiores voluptate, illum maiores esse officia perspiciatis, excepturi tempora vel itaque! Consectetur, placeat nihil voluptatibus minima rerum optio delectus ullam.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusamus asperiores voluptate, illum maiores esse officia perspiciatis, excepturi tempora vel itaque! Consectetur, placeat nihil voluptatibus minima rerum optio delectus ullam.</p>
+
+        <div class="major-application-tcr-row">
+          <div class="major-app-heading">
+            <h3>Major Applications of TCR Repertoire Profiling</h3>
+          </div>
+        
+          <div class="medgenome-row">
+            <div class="medgenome-col">
+              <div class="td tr-one"><span>Therapeutics</span></div>
+              <div class="td tr-two"><span>Identify antigen-specific TCRs</span></div>
+              <div class="td tr-three"><span>Generate engineered T cell for adoptive cell therapy</span></div>
+            </div>
+            <div class="medgenome-col">
+              <div class="td tr-one"><span>Diagnostics</span></div>
+              <div class="td tr-two"><span>Assay TCR clonality for autoimmune disorders</span></div>
+              <div class="td tr-three"><span>Diagnostics for autoimmune & infectious diseases</span></div>
+            </div>
+            <div class="medgenome-col">
+              <div class="td tr-one"><span>Treatment monitoring</span></div>
+              <div class="td tr-two"><span>Assay TCR repertoire (tumor & autoimmune disorders)</span></div>
+              <div class="td tr-three"><span>Identify biomarkers of response</span></div>
+            </div>
+          </div>
+        </div>
+      
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusamus asperiores voluptate, illum maiores esse officia perspiciatis, excepturi tempora vel itaque! Consectetur, placeat nihil voluptatibus minima rerum optio delectus ullam.</p>
+        
+        <h3>Overview of the service offerings from Medgenome</h3>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Name of offering</th>
+                <th>Input type</th>
+                <th>Amount of material neeeded</th>
+                <th>Analysis method</th>
+                <th>Information Obtained</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>immunoSEQ Kit (Adaptive Biotechnologies)</td>
+                <td>gDNA</td>
+                <td>Extracted Nucleic Acid</td>
+                <td>Extracted Nucleic Acid</td>
+                <td>Extracted Nucleic Acid</td>
+              </tr>
+              <tr>
+                <td>Frozen Cell Pellets</td>
+                <td>Frozen Cell Pellets</td>
+                <td>Frozen Cell Pellets</td>
+                <td>Frozen Cell Pellets</td>
+                <td>Frozen Cell Pellets</td>
+              </tr>
+              <tr>
+                <td>SMARTer TCR profiling kit (Takara Bio USA)</td>
+                <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
+                <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
+                <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
+                <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
+              </tr>
+             </tbody>
+          </table>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusamus asperiores voluptate, illum maiores esse officia perspiciatis, excepturi tempora vel itaque! Consectetur, placeat nihil voluptatibus minima rerum</p>
+        
       </div>
 
     </div><!-- mdgo-tab-main-wrap -->
 
   </div><!-- eo services-contant-box -->
 </section><!-- eo services-contant-section -->
+
+
+<section class="medgenome-form-section">  
+  <div class="container">
+    <div class="genomic-research-row">
+      <h2>Considering genomic research?</h2>
+      <h3>We're at your service</h3>
+      <p>Contact MedGenome today to accelerate your NGS research quickly and cost-effectively</p>
+
+      <a href="#">Request a quote</a>
+    </div>
+
+    <form action="" class="form-box">
+      <div class="form-row">
+        <div class="form-col">
+          <div class="form-control">
+            <input type="text" name="name" placeholder="Name">
+            <span>icon</span>
+          </div>
+          <div class="form-control">
+            <input type="text" name="email" placeholder="Email">
+            <span>icon</span>
+          </div>
+        </div>
+        <div class="form-col">
+          <div class="form-control">
+            <input type="text" name="organization" placeholder="Organization">
+            <span>icon</span>
+          </div>
+          <div class="form-control">
+            <input type="text" name="phonenumber" placeholder="Phone Number">
+            <span>icon</span>
+          </div>
+          <div class="form-control">
+            <input type="text" name="interest" placeholder="Interest">
+            <span>icon</span>
+          </div>
+        </div>
+        <div class="form-col">
+          <div class="form-control inquiry-control">
+            <textarea name="inquiry"  rows="6" placeholder="Inquiry / Message"></textarea>
+            <span>icon</span>
+          </div>
+        </div>
+      </div>
+      <div class="submit-row">
+        <div class="quiry-information">
+          <p>Thank you for your interest in MedGenome.</p>
+          <p>We are reviewing your request and will get back to you within 1 business day.</p>
+        </div>
+        <input class="submitBtn" type="submit" name="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</section><!-- eo medgenome-form-section -->
+
 
 
 <footer class="site-footer-section">
