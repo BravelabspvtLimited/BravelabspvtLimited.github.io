@@ -449,9 +449,19 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   padding:0 5px;
   color:#bcbcbc;
 }
+.breadcrumbs-row ul li a:hover{
+  color:#40a9eb;
+}
 .breadcrumbs-row .active{
   color:#40a9eb;
 }
+.whole-genome-trans-tcr-nav .active{
+  background-color:#acacac;  
+}
+.whole-genome-trans-tcr-nav .active a{
+  color:#fff;  
+}
+
 .mdgo-tab-main-wrap{
   padding:25px 0;
 }
@@ -487,11 +497,11 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   -webkit-transition:700ms; 
   -moz-transition:700ms;
 }
-.tab-arrow.tab-arrow-top{
+/*.tab-arrow.tab-arrow-top{
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
-}
+}*/
 .mdgo-tab-content-wrap{ 
   padding:0 20px 25px;
   display: none;
@@ -787,6 +797,9 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   color:#40a9eb;
   text-decoration: none;
 }
+.table-container.qc-report-table tbody tr:nth-child(2) td span a:hover{
+  color:#2a71bf;
+}
 .qc-report-heading{
   position: relative;
 }
@@ -804,6 +817,9 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   position: absolute;
   right:0;
   top:0;
+}
+.qc-report-heading a:hover{
+  color: #137dbf; 
 }
 .major-application-tcr-row{
   padding:20px 0;
@@ -876,6 +892,20 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
 .major-application-col img{
   width: 200%;
 }
+.highlightonhov{
+  color:#252525;
+  text-decoration: none;
+}
+.highlightonhov:hover{
+  color:#40a9eb;
+}
+.table-container.standardAnlOff tbody td:nth-child(1){
+  background-color:#fff;  
+  font-weight:400;
+}
+.table-container.whole-exome-table1 tbody td:nth-child(1){
+  width: 20%;
+} 
 
 @media(min-width:575px){  
   .whole-genome-trans-tcr-nav ul li{
@@ -1167,6 +1197,7 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
                 font-size:18px;
                 font-weight:400;
                 opacity:0.9;
+                overflow: hidden;
               }
 
                 .select-styled:after {
@@ -1193,6 +1224,7 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
               .select-options {
                 display: none; 
                 position: absolute;
+                width:290px;
                 top:13px;
                 right: 0;
                 left: 0;
@@ -1302,7 +1334,7 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   background-color: #fff;
   border-radius:5px;
   height:90%;
-  top:30px;
+  top:50px;
   bottom:0;
   left:0;
   right:0;
@@ -1317,9 +1349,14 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
 .lightbox-click{
   cursor: pointer;
 }
-
 .lightbox-img{
-  width:760px;
+  width:960px;
+  position: absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  padding: 20px;
 }
 .lightbox-img img{
   width: 100%;
@@ -1368,18 +1405,19 @@ transform:rotate(-45deg);
 }
 
 @media(min-width:768px){
+
   .lightbox-inner-wrap{
-    /*overflow: hidden;*/
+    overflow: hidden;
     width:80%;
+    top:30px;
   }
   .lightbox-img{
-    width:970px;
+    width:960px;
   } 
 }
 
 @media(min-width:1200px){
   .lightbox-inner-wrap{
-    /*overflow: hidden;*/
     width:85%;
   }
   .lightbox-img{
@@ -1504,10 +1542,59 @@ transform:rotate(-45deg);
 
 
 
+/*======== Style For Icons========*/
 
+.contact-email-phone .icon-envelope{
+  margin-right: 10px;
+  font-size:14px;
+  position:relative;
+  top:2px;
+}
+.contact-email-phone .icon-phone{
+  margin-right: 10px;
+  font-size:14px;
+  position:relative;
+  top:1px;
+}
+.form-control i{
+  color:#dddddd;
+  font-size:14px;
+  position:relative;
+  top:4px;
+}
+.inquiry-control .icon-edit{
+  font-size: 18px;  
+}
+.footer-col i{
+  color:#0EC2CD;
+  font-size:14px;
+  margin-right:4px;
+}
+.address{
+  position: relative;
+}
+.address .icon-map-marker{
+  font-size:17px;
+  position: absolute;
+  left:3px;
+  top:5px;
+}
+.qc-report-content-wrap .table-container tbody td span{
+  display: inline-block;
+  margin-right: 10px;
+}
+.qc-report-content-wrap .table-container tbody td span .icon-link{
+  font-size: 14px;
+}
+.qc-report-heading a span .icon-long-arrow-right{
+  font-size:14px;
+  display: inline-block;
+  margin-left:5px;
+  position: relative;
+  top:1px;
+}
 
-
-
+/*======== End Style For Icons========*/
 
 
 
