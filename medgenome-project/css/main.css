@@ -209,6 +209,11 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   color:#707070;
   text-transform: uppercase;
   text-decoration: none;
+  background: url(../img/flag.png) no-repeat left;
+    font-size: 14px;
+    padding-left: 22px;
+    text-decoration: none;
+    margin-left: 3px;
 }
 .contact-email-phone{
   background-color:#0990d6;
@@ -257,7 +262,6 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
 .contact-email-phone a{
   margin:10px 0;
 }
-
 .site-nav.container{
   max-width: 100%; 
 }
@@ -294,9 +298,11 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   .site-logo-wrap {
     padding: 20px 15px;
   }   
-  /*.site-logo{
-    width:180px;
-  }*/
+  .site-nav ul{
+    margin:0;
+    padding:0;
+    float: right;
+  }
   .site-nav{
     display: block;
     padding:24px 10px 0 0;
@@ -340,7 +346,7 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
 
 @media(min-width:1345px){ 
    .site-nav{
-    padding:30px 10px 0 0;
+    padding:30px 0 0 0;
   }  
 }
 @media(min-width:1900px){ 
@@ -492,16 +498,18 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   overflow: hidden;
 }
 .mdgo-tab-content-wrap p{
-  font-size:14px;
-  /*margin-top:0;*/
+  font-size: 16px;
 }
 .ngs-services-content{
   display: block;
 }
-
+.ngs-services-content p{
+  margin-top:0;
+}
 .ngs-inner-tab-wrap{
   padding:15px;
   border:solid 1px #b5b5b5;
+  margin-bottom: 20px;
 }
 .ngs-inner-tab-btn{
   padding:0;
@@ -567,13 +575,14 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   font-weight:700;
   font-size:18px;
   text-align: center;
-  margin:0;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 
 /*Start Table Style*/
 .table-container {
   width: 100%;
-  margin:30px 0;   
+  margin:30px 0 0;   
 }
 .table-container table {
   width: 100%;
@@ -585,6 +594,10 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
 .table-container td {
   padding:10px 15px;
   color: #fff;
+}
+.table-container th span,
+.table-container td span{
+  display: block;
 }
 .table-container th {
   text-align: left;
@@ -601,14 +614,18 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
 .table-container tbody td {
   width: 33.33%;
   color:#252525;
-  font-size:12px;
+  font-size:14px;
   border:solid 1px #dce4e8;
 }
 .table-container tbody tr td:nth-child(1){
   background-color: #e9f8ff;
   color: #252525;
   font-weight:700;
-  font-size:13px;
+  font-size:14px;
+}
+
+.mdg-mt{
+  margin-top:35px !important;
 }
 
 /*End of Table Styule*/
@@ -674,7 +691,7 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   font-weight:700;
   text-align: center;
   color:#fff;
-  margin:15px auto 25px;
+  margin:40px auto 25px;
 }
 .metrics-chart-box img{
   width:100%;
@@ -714,13 +731,30 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   width:20%; 
   text-align: center;
 }
+.table-container.wgs-germline-table .wgs-gtr td{
+  background-color:rgba(0,0,0, 0.0);
+  font-weight: 400;
+}
+.table-container.wgs-germline-table tbody td{
+  border:none;
+}
+.table-container.wgs-germline-table tbody td:nth-child(1){
+  border:solid 1px #dce4e8;
+}
+.table-container.wgs-germline-table tbody .wgs-gtr td:nth-child(1){
+  border:none;
+}
+.table-container.wgs-germline-table .wgs-gtr-gray{
+  background-color: #E7E7E7;
+}
+
 .tcr-sequencing-content .table-container thead th{
   text-align: center;
 }
 .tcr-sequencing-content .table-container tbody td:nth-child(1){
   background-color:#fff;
   font-weight: 400;
-  font-size:12px;
+  font-size:14px;
   text-align: left;
 }
 .tcr-sequencing-content h3{
@@ -782,7 +816,7 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
 .major-app-heading h3{
   color:#40a9eb;
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 }
 .major-application-tcr-row .medgenome-row{
@@ -812,8 +846,8 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
 
 .bioinformatics-analysis-content h3{
   color:#000;
-  font-size:18px;
-  margin:10px 0;
+  font-size:20px;
+  margin:20px 0 15px;
 }
 .varimat-list li{
   margin:5px 0; 
@@ -829,21 +863,19 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   width: 100%;
   display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.table-container{
+  overflow-x:scroll;
+}
+.table-container.table-scroll-mob table{
+  width: 768px;
+}
+.major-application-col{
+  padding: 25px 20px 5px;
+  overflow-x:scroll; 
+}
+.major-application-col img{
+  width: 200%;
+}
 
 @media(min-width:575px){  
   .whole-genome-trans-tcr-nav ul li{
@@ -868,6 +900,15 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   .major-application-tcr-row .medgenome-col{
     flex-basis:47%;
     margin-bottom:15px;
+  }
+  .table-container{
+    overflow-x:hidden; 
+  }
+  .table-container.table-scroll-mob table{
+    width: 100%;
+  }
+  .major-application-col img{
+    width:140%;
   }
 }
 
@@ -937,6 +978,12 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
     flex-basis:30%;
     /*margin-bottom:15px;*/
   }
+  .major-application-col{
+    overflow-x:hidden; 
+  } 
+  .major-application-col img{
+    width: 100%;
+  }
 }
 
 @media(min-width:1200px){
@@ -1003,7 +1050,7 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   flex-direction: column;
 }
 .form-control{
-  border-bottom:solid 1.5px #b7b7b7;
+  border-bottom:solid 1px #b7b7b7;
   padding-right:25px;
   margin-bottom:15px;
   position: relative;
@@ -1018,6 +1065,7 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   border:none;
   outline: none;
 } 
+
 .form-control textarea{
   width: 100%;
   padding:10px 25px 10px 0;
@@ -1028,6 +1076,9 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   font-weight:400;
   border:none;
   outline: none;
+}
+.select-control-wrap{
+  padding-bottom: 25px;
 }
 .form-control.inquiry-control{
   padding-right:0; 
@@ -1082,6 +1133,101 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   opacity:unset;
 }
 
+/*===============================================
+=            Style for Select Option            =
+===============================================*/
+
+              .select-hidden  {
+                display: none;
+                visibility: hidden;
+                padding-right: 10px;
+              }
+              .select {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                font-size:1.2500000004rem;
+                 /*color:#;*/
+                font-weight: 400;
+                width:100%;
+                height:100%;
+              }
+              .select-styled {
+                position: absolute; 
+                top: -27px;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                height:44px;
+                border-bottom:solid 1px #b7b7b7;
+                line-height: 27px;
+                padding:10px 0;
+                display: block;
+                color:#898989;
+                font-size:18px;
+                font-weight:400;
+                opacity:0.9;
+              }
+
+                .select-styled:after {
+                  font-family: 'MedgenomeIcon' !important;
+                  content: "\e901";
+                  position: absolute;
+                  top: 17px;
+                  right: -5px;
+                  font-size:26px;
+                  color:#dddddd;
+                }
+                
+                /*.select-styled:active, .select-styled.active {  
+                }*/
+                /*.select-styled:active, .select-styled.active */
+
+                /*.select-styled:after {
+                  transform: rotate(-180deg);
+                  -webkit-transform: rotate(-180deg);
+                  -moz-transform: rotate(-180deg);
+                  -o-transform: rotate(-180deg);
+                }*/
+
+              .select-options {
+                display: none; 
+                position: absolute;
+                top:13px;
+                right: 0;
+                left: 0;
+                z-index: 100;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                background-color:#fff;
+                border:solid 1px #e6e6e6;
+                border-radius:2px;
+                -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+                -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+                box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+              }   
+                .select-options li {
+                  margin: 0;
+                  text-indent: 10px;
+                  line-height:30px;
+                  color:#898989;
+                  font-size:16px;
+                  font-weight:400;
+                  border-bottom:solid 1px #e6e6e6;
+                  padding: 5px 5px;
+                }
+                .select-options li:hover {
+                  background-color:#00b8d4;
+                }
+                .select-options[rel="hide"] {
+                  display: none;
+                }
+
+/*=====  End of Style for Select Option  ======*/
+
+
+
 @media(min-width:992px){
 
   .medgenome-form-section .genomic-research-row a{
@@ -1117,6 +1263,12 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
     margin-top:0;
     right: 0;
   }
+  .select-control-wrap{
+    padding-bottom: 0;
+  }
+  .inquiry-control textarea{
+    height:142px;
+  }
 }
 
 @media(min-width:1200px){
@@ -1129,13 +1281,120 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
 
 
 
+/*========Style for LightBox=======*/
+.lightbox-target{
+  background-color:rgba(0,0,0, 0.8);
+  position: fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  z-index:2000;
+  padding: 30px 0;
+  display: none;
+}
+
+.lightbox-inner-wrap{
+  width: 90%;
+  margin:auto;
+  background-color: #fff;
+  border-radius:5px;
+  height:90%;
+  top:30px;
+  bottom:0;
+  left:0;
+  right:0;
+  position: absolute;
+  overflow:scroll;
+  padding:15px; 
+  display: none; 
+}
+.lightboxSlide{
+  display: block;
+}
+.lightbox-click{
+  cursor: pointer;
+}
+
+.lightbox-img{
+  width:760px;
+}
+.lightbox-img img{
+  width: 100%;
+}
+.lightbox-close{
+  position: absolute;
+  top:5px;
+  right:25px;
+  cursor: pointer;
+  display: block;
+  z-index: 2500;
+  width:35px;
+  height: 35px;
+}
+
+.lightbox-close:before{
+  content: "";
+display: block;
+border-radius:4px;
+height: 30px;
+width: 2px;
+background:#fff;
+position: absolute;
+left: 15px;
+top:5px;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+
+.lightbox-close:after{
+  content: "";
+display: block;
+border-radius: 4px;
+height: 30px;
+width: 2px;
+background: #fff;
+position: absolute;
+left:15px;
+top:5px;
+-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+
+@media(min-width:768px){
+  .lightbox-inner-wrap{
+    /*overflow: hidden;*/
+    width:80%;
+  }
+  .lightbox-img{
+    width:970px;
+  } 
+}
+
+@media(min-width:1200px){
+  .lightbox-inner-wrap{
+    /*overflow: hidden;*/
+    width:85%;
+  }
+  .lightbox-img{
+    width:100%;
+  }
+}
+
+
+/*========End Style for LightBox=======*/
+
+
 
 
 /*======= Style for Footer =========*/
 
-.site-footer-section{
-  
-}
 .site-footer-section .site-logo{
   width:170px;
   margin:0;

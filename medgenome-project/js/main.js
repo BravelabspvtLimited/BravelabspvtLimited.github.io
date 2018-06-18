@@ -1,4 +1,5 @@
 
+
 (function () {
       var clickItems= document.querySelectorAll('.ngs-inner-tab-btn li a');
       var skillItems = document.querySelectorAll('.ngs-inner-tab-content-wrap');
@@ -33,8 +34,6 @@
         }
 
   })();
-
-
 
 
 
@@ -111,6 +110,145 @@ $(document).ready(function() {
 
 })();
 //end script for ngs inner tab
+
+
+(function(){
+
+	if($(window).width() <= 992){
+
+		$('.smooth-up1').click(function(){
+      $("html, body").animate({ scrollTop: 700 }, 500);
+      return false;
+    });
+
+    $('.smooth-up2').click(function(){
+      $("html, body").animate({ scrollTop: 830 }, 500);
+      return false;
+    });
+
+    $('.smooth-up3').click(function(){
+      $("html, body").animate({ scrollTop: 945 }, 500);
+      return false;
+    });
+
+    $('.smooth-up4').click(function(){
+      $("html, body").animate({ scrollTop: 1085 }, 500);
+      return false;
+    });
+	}
+
+	if($(window).width() >= 992){
+
+		$('.smooth-up1').click(function(){
+      $("html, body").animate({ scrollTop: 290 }, 500);
+      return false;
+    });
+
+    $('.smooth-up2').click(function(){
+      $("html, body").animate({ scrollTop: 430 }, 500);
+      return false;
+    });
+
+    $('.smooth-up3').click(function(){
+      $("html, body").animate({ scrollTop: 540 }, 500);
+      return false;
+    });
+
+    $('.smooth-up4').click(function(){
+      $("html, body").animate({ scrollTop: 650 }, 500);
+      return false;
+    });
+	}   
+
+})();
+
+
+	// $(window).scroll(function(){
+  //       if ($(this).scrollTop() > 0) {
+  //           $('#backToTop').fadeIn('slow');
+  //       } else {
+  //           $('#backToTop').fadeOut('slow');
+  //       }
+  //   });
+
+   
+  // script for LightBox
+
+  $('.lightbox-click').click(function() {
+  	$(this).next().css({'display':'block'});
+  	$(this).next().find('.lightbox-inner-wrap').addClass('lightboxSlide');
+  });
+
+  $('.lightbox-close').click(function() {
+  	$(this).parents('.lightbox-target').css({'display':'none'});
+  	$(this).siblings('.lightbox-inner-wrap').removeClass('lightboxSlide');
+  });
+
+
+
+  // end script for LightBox
+
+
+
+/*================================================
+    =           Script For Select Option             =
+    ================================================*/
+
+
+    $('select.rw-select-box').each(function(){
+      var $this = $(this), numberOfOptions = $(this).children('option').length;
+
+      $this.addClass('select-hidden');
+      $this.wrap('<div class="select"></div>');
+      $this.after('<div class="select-styled"></div>');
+
+      var $styledSelect = $this.next('div.select-styled');
+      $styledSelect.text($this.children('option').eq(0).text());
+
+      var $list = $('<ul />', {
+          'class': 'select-options'
+      }).insertAfter($styledSelect);
+
+      for (var i = 0; i < numberOfOptions; i++) {
+          $('<li />', {
+              text: $this.children('option').eq(i).text(),
+              rel: $this.children('option').eq(i).val()
+          }).appendTo($list);
+      }
+
+      var $listItems = $list.children('li');
+
+      $styledSelect.click(function(e) {
+          e.stopPropagation();
+          $('div.select-styled.active').not(this).each(function(){
+              $(this).removeClass('active').next('ul.select-options').hide();
+          });
+          $(this).toggleClass('active').next('ul.select-options').toggle();
+      });
+
+      $listItems.click(function(e) {
+          e.stopPropagation();
+          $styledSelect.text($(this).text()).removeClass('active');
+          $this.val($(this).attr('rel'));
+          $this.trigger('change');
+          $list.hide();
+          //console.log($this.val());
+      });
+
+      $(document).click(function() {
+          $styledSelect.removeClass('active');
+          $list.hide();
+      });
+
+    });
+
+
+
+  /*=====  End of Script For Select Option   ====*/
+
+
+
+
 
 
 });

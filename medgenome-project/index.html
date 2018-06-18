@@ -14,6 +14,7 @@
 
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 
 </head>
@@ -22,7 +23,7 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-<header class="site-header">
+<header class="site-header" id="section4">
   <div class="site-logo-wrap">
     <div class="site-logo">
       <img src="https://2bzyy32beq443ip8qe29tijy-wpengine.netdna-ssl.com/wp-content/uploads/2017/05/logo.png" alt="medgenome logo">
@@ -51,11 +52,11 @@
 
   <div class="contact-box">
     <div class="contact-us">
-      <a href="https://www.medgenome.com/research/">US</a>
+      <a href="https://www.medgenome.com/research/"><span></span>US</a>
     </div>
     <div class="contact-email-phone">
-      <a href="mailto:research@medgenome.com">research@medgenome.com</a>
-      <a href="tel:+918884400954">(888) 440-0954</a>
+      <a href="mailto:research@medgenome.com"><i class="icon-envelope"></i>research@medgenome.com</a>
+      <a href="tel:+918884400954"><i class="icon-phone"></i>(888) 440-0954</a>
     </div>
   </div>
 </header><!-- eo site-header  -->
@@ -99,12 +100,12 @@
     </div><!-- eo breadcrumbs-row -->
 
     <div class="mdgo-tab-main-wrap">
-      <div class="mdgo-tab-btn">
+      <div class="mdgo-tab-btn smooth-up1">
         <h3>NGS Services</h3>
         <span class="tab-arrow tab-arrow-top"></span>
       </div>
       <div class="mdgo-tab-content-wrap ngs-services-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusamus asperiores voluptate, illum maiores esse officia perspiciatis, excepturi tempora vel itaque! Consectetur, placeat nihil voluptatibus minima rerum optio delectus ullam.</p>
+        <p>At MedGenome we offer an end to-end solution for Next-generation sequencing as a service for a wide range of sample types ( DNA, RNA and specialized samples like T&B cells) as shown in Figure 1. We provide the user flexibility by providing them the option to use our services from  end-to-end or simply request services at any step of the workflow. To learn more about our services click on the tabs in the workflow below.</p>
   
         <div class="ngs-inner-tab-wrap">
           <ul class="ngs-inner-tab-btn">
@@ -115,7 +116,7 @@
           </ul>
 
           <div class="ngs-inner-tab-content-wrap active" trgt_item="samplePreparation">
-            <div class="table-container">
+            <div class="table-container table-scroll-mob">
               <table>
                 <thead>
                   <tr>
@@ -127,13 +128,14 @@
                 <tbody>
                   <tr>
                     <td>Extracted Nucleic Acid</td>
-                    <td>Minimum: 200 ng (WGS/WES)
-                    Minimum: 100 ng (DV200 50 ng (Targeted)</td>
+                    <td><span>Minimum: 200 ng (WGS/WES)</span>
+                    <span>Minimum: 100 ng (DV200 50 ng (Targeted)</span></td>
                     <td>Minimum: 100 ng (DV20 30%)</td>
                   </tr>
                   <tr>
                     <td>Frozen cell pellets</td>
-                    <td>Minimum 1 X 106 cells Minimum 1 X 106 cells (ship on dry ice)</td>
+                    <td><span>Minimum 1 X 106 cells</span> 
+                    <span>Minimum 1 X 106 cells (ship on dry ice)</span></td>
                     <td>Minimum 1 X 106 cells (ship on dry ice)</td>
                   </tr>
                   <tr>
@@ -163,7 +165,7 @@
           </div><!-- eo ngs-inner-tab-content-wrap -->
 
           <div class="ngs-inner-tab-content-wrap" trgt_item="libraryPrep">
-            <div class="table-container">
+            <div class="table-container table-scroll-mob">
               <table>
                 <thead>
                   <tr>
@@ -173,29 +175,28 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Minimum: 200 ng (WGS/WES)
-                    Minimum: 100 ng (DV200 50 ng (Targeted)</td>
-                    <td>Minimum: 100 ng (DV20 30%)</td>
+                    <td><span>RNA (whole transcriptome)</span> <span>Transcribed exonic regions</span> <span>Small RNA</span></td>
+                    <td><span>TrueSeq RNA V2, TrueSeq Stranded (No Capture probes used)</span><span>TrueSeq RNA Access</span> <span>Trilink (No Capture probes used)</span> <span>NEB (No Capture probes used)</span></td>
                   </tr>
                   <tr>
-                    <td>Minimum 1 X 106 cells Minimum 1 X 106 cells (ship on dry ice)</td>
-                    <td>Minimum 1 X 106 cells (ship on dry ice)</td>
+                    <td>Whole exome (WES)</td>
+                    <td><span>SureSelect V5</span><span>SureSelect V5+UTR</span><span>TrueSeq Exome</span></td>
                   </tr>
                   <tr>
-                    <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
-                    <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
+                    <td>Whole genome (WGS)</td>
+                    <td><span>TrueSeq NANO</span> <span>KAPA (No Capture probes used)</span></td>
                   </tr>
                   <tr>
-                    <td>5 slides (10 μM thick) 250 mm2 surface area</td>
-                    <td>8 slides (10 μM thick) 250 mm2 surface area</td>
+                    <td>MethylSeq</td>
+                    <td>Agilent Sure Select XT Methyl-Seq Target Enrichment kit</td>
                   </tr>
                   <tr>
-                    <td>5 curls (10 μM thick)</td>
-                    <td>8 curls (10 μM thick)</td>
+                    <td>TCR sequencing</td>
+                    <td>ImmunoSeq, SMARTer TCR Profiling</td>
                   </tr>
                   <tr>
-                    <td>Fresh or cells in sample prep agent</td>
-                    <td>Fresh or cells in sample-prep agent</td>
+                    <td>Panel sequencing</td>
+                    <td>Custom design (Nimblegen, IDT)</td>
                   </tr>
                 </tbody>
               </table>
@@ -203,7 +204,7 @@
           </div><!-- eo ngs-inner-tab-content-wrap -->
 
           <div class="ngs-inner-tab-content-wrap" trgt_item="sequencing">
-            <div class="table-container">
+            <div class="table-container table-scroll-mob">
               <table>
                 <thead>
                   <tr>
@@ -213,29 +214,16 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Minimum: 200 ng (WGS/WES)
-                    Minimum: 100 ng (DV200 50 ng (Targeted)</td>
-                    <td>Minimum: 100 ng (DV20 30%)</td>
+                    <td>WGS/WES/Targeted</td>
+                    <td>Illumina NovaSeq™ 6000, HiSeq 2500</td>
                   </tr>
                   <tr>
-                    <td>Minimum 1 X 106 cells Minimum 1 X 106 cells (ship on dry ice)</td>
-                    <td>Minimum 1 X 106 cells (ship on dry ice)</td>
+                    <td>Whole-transcriptome profiling</td>
+                    <td>Illumina NovaSeq™ 6000, HiSeq 2500, MiSeq</td>
                   </tr>
                   <tr>
-                    <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
-                    <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
-                  </tr>
-                  <tr>
-                    <td>5 slides (10 μM thick) 250 mm2 surface area</td>
-                    <td>8 slides (10 μM thick) 250 mm2 surface area</td>
-                  </tr>
-                  <tr>
-                    <td>5 curls (10 μM thick)</td>
-                    <td>8 curls (10 μM thick)</td>
-                  </tr>
-                  <tr>
-                    <td>Fresh or cells in sample prep agent</td>
-                    <td>Fresh or cells in sample-prep agent</td>
+                    <td>TCR profiling</td>
+                    <td>Illumina MiSeq, NovaSeq™ 6000 ( high throughput single-cell )</td>
                   </tr>
                 </tbody>
               </table>
@@ -246,8 +234,20 @@
             <h3>WGS Germline variant calling Workflow</h3>
             
             <div class="wgs-workflow">
-              <img src="img/wgs-workflow.png" alt="WGS Germline variant calling Workflow">
+              <div class="lightbox-click">
+                <img src="img/wgs-workflow.png" alt="WGS Germline variant calling Workflow">
+              </div>
+
+              <div class="lightbox-target">
+                <div class="lightbox-inner-wrap">
+                  <div class="lightbox-img">
+                    <img src="img/wgs-workflow.png"/>
+                  </div>
+                </div>
+                <span class="lightbox-close"></span>
+              </div>
             </div>
+
 
             <h3>MedGenome VariMAT – Variant deep annotation program</h3>
             <ul class="varimat-list">
@@ -260,35 +260,57 @@
             <h3>Somatic Variant Calling and Annotation Pipeline</h3>
 
             <div class="somatic-pipeline">
-              <img src="img/somatic-variant-pipeline.png" alt="Somatic Variant Calling and Annotation Pipeline">
+              <div class="lightbox-click">
+                <img src="img/somatic-variant-pipeline.png" alt="Somatic Variant Calling and Annotation Pipeline">
+              </div>
+
+              <div class="lightbox-target">
+                <div class="lightbox-inner-wrap">
+                  <div class="lightbox-img">
+                    <img src="img/somatic-variant-pipeline.png" alt="Somatic Variant Calling and Annotation Pipeline">
+                  </div>
+                </div>
+                <span class="lightbox-close"></span>
+              </div>
             </div>
 
             <h3>Whole-Transcriptome Analysis Pipeline</h3>
 
             <div class="whole-transcriptome-pipeline">
-              <img src="img/whole-transcriptome-pipeline.png" alt="whole transcriptome analysis pipeline">
+              <div class="lightbox-click">
+                <img src="img/whole-transcriptome-pipeline.png" alt="whole transcriptome analysis pipeline">
+              </div>
+
+              <div class="lightbox-target">
+                <div class="lightbox-inner-wrap">
+                  <div class="lightbox-img">
+                    <img src="img/whole-transcriptome-pipeline.png" alt="whole transcriptome analysis pipeline">
+                  </div>
+                </div>
+                <span class="lightbox-close"></span>
+              </div>
             </div> 
       
           </div><!-- eo ngs-inner-tab-content-wrap -->
         </div><!-- eo ngs-inner-tab-wrap -->
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos tempora asperiores fugit unde laboriosam, fuga facere dignissimos ea, impedit alias ipsa deleniti ipsum sed ratione, quibusdam culpa, libero nam incidunt.</p>
+        <p>Figure 1 : Workflow of the NGS Services provided at MedGenome for a wide range of sample types. Shown in this diagram, we highlight the steps taken to validate  successful sample preparation, library generation, sequencing and data analysis for successful completion of a project. Click on each tab to learn more about the options available, steps followed and the QC reports generated.</p>
       </div>
       
-      <div class="mdgo-tab-btn">
+      <div class="mdgo-tab-btn smooth-up2">
         <h3>Whole Genome / Whole  Exome Sequencing</h3>
         <span class="tab-arrow"></span>
       </div>
       <div class="mdgo-tab-content-wrap whole-genome-content">
         <div class="whole-genome-trans-tcr-nav">
           <ul>
-            <li><a href="#">About</a></li><li><a href="#">QC Report</a></li><li><a href="#">Informatics</a></li><li><a href="#">White paper</a></li><li><a href="#">Place and order</a></li>
+            <li><a href="#">About</a></li><li><a href="qc-reports.html">QC Report</a></li><li><a href="#">Informatics</a></li><li><a href="#">White paper</a></li><li><a href="#">Place and order</a></li>
           </ul>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusamus asperiores voluptate, illum maiores esse officia perspiciatis, excepturi tempora vel itaque! Consectetur, placeat nihil voluptatibus minima rerum optio delectus ullam.</p>
+        <p>Whole Genome Sequencing: Whole Genome and exome sequencing using NGS have been widely accepted to speed up and reduce the cost of sequencing genomes for basic research as well as use of genomic data for a wide range of applications : genome wide association studies for complex diseases, variant calling to identify clinically actionable mutations and other specialized areas like identification of mutations that accumulate and give rise of tumor neo-antigens and shared antigens. At MedGenome we routinely perform Whole Genome Sequencing and  Exome Sequencing and Analyses using best practices.</p>
         <div class="medgenome-row">
           <div class="medgenome-col">
-            <div class="table-container">
+            <div class="table-container table-scroll-mob">
               <table>
                 <thead>
                   <tr>
@@ -303,23 +325,23 @@
                   </tr>
                   <tr>
                     <td>Frozen Cell Pellets</td>
-                    <td>Minimum 1 X 106 cells (ship on dry ice)</td>
+                    <td>Minimum 1 x 106 cells (ship on dry ice)</td>
                   </tr>
                   <tr>
-                    <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
+                    <td>Frozen Tissues</td>
                     <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
                   </tr>
                   <tr>
+                    <td>FFPE Slides</td>
                     <td>5 slides (10 μM thick) 250 mm2 surface area</td>
-                    <td>8 slides (10 μM thick) 250 mm2 surface area</td>
                   </tr>
                   <tr>
+                    <td>Curls</td>
                     <td>5 curls (10 μM thick)</td>
-                    <td>8 curls (10 μM thick)</td>
                   </tr>
                   <tr>
+                    <td>Single-cell</td>
                     <td>Fresh or cells in sample prep agent</td>
-                    <td>Fresh or cells in sample-prep agent</td>
                   </tr>
                 </tbody>
               </table>
@@ -327,7 +349,7 @@
             <p>Figure 1: a) Table of all the sample types used at MedGenome for WGS/WES</p>
           </div>
           <div class="medgenome-col">
-            <div class="table-container">
+            <div class="table-container table-scroll-mob">
               <table>
                 <thead>
                   <tr>
@@ -337,28 +359,24 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Extracted Nucleic Acid</td>
-                    <td>Minimum: 200 ng (WGS/WES) 50 ng (Targeted)</td>
+                    <td>Data QC (Read orientation, quality distribution, base distribution and GC distribution for all reads)</td>
+                    <td>CNV analysis</td>
                   </tr>
                   <tr>
-                    <td>Frozen Cell Pellets</td>
-                    <td>Minimum 1 X 106 cells (ship on dry ice)</td>
+                    <td>Alignment to the reference genome</td>
+                    <td>Pathway analysis</td>
                   </tr>
                   <tr>
-                    <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
-                    <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
+                    <td>Coverage analysis</td>
+                    <td>Deep variant annotation</td>
                   </tr>
                   <tr>
-                    <td>5 slides (10 μM thick) 250 mm2 surface area</td>
-                    <td>8 slides (10 μM thick) 250 mm2 surface area</td>
+                    <td>Variant calling (germline/somatic calling)</td>
+                    <td>Mutational burden analysis</td>
                   </tr>
                   <tr>
-                    <td>5 curls (10 μM thick)</td>
-                    <td>8 curls (10 μM thick)</td>
-                  </tr>
-                  <tr>
-                    <td>Fresh or cells in sample prep agent</td>
-                    <td>Fresh or cells in sample-prep agent</td>
+                    <td>Variant Annotation</td>
+                    <td>Variant interpretation</td>
                   </tr>
                 </tbody>
               </table>
@@ -371,60 +389,90 @@
           <h3>WGS germline calling validation</h3>
           <p>Total number of SNPs and Indels predicted using different flavour of GATK on two different datasets</p>
           
-          <div class="table-container">
+          <div class="table-container table-scroll-mob wgs-germline-table">
               <table>
                 <thead>
                   <tr>
-                    <th>Standard Analysis Offering</th>
-                    <th>Advance Analysis Offering</th>
-                    <th>Advance Analysis Offering</th>
-                    <th>Advance Analysis Offering</th>
-                    <th>Advance Analysis Offering</th>
+                    <th>Dataset</th>
+                    <th>Germline Variant Caller</th>
+                    <th>#of SNPs</th>
+                    <th>#of Indels</th>
+                    <th>Total</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Extracted Nucleic Acid</td>
-                    <td>Minimum: 200 ng (WGS/WES) 50 ng (Targeted)</td>
-                    <td>Minimum: 200 ng (WGS/WES) 50 ng (Targeted)</td>
-                    <td>Minimum: 200 ng (WGS/WES) 50 ng (Targeted)</td>
-                    <td>Minimum: 200 ng (WGS/WES) 50 ng (Targeted)</td>
+                  <tr class="wgs-gtr-gray">
+                    <td>Gold Standard</td>
+                    <td>GiAB</td>
+                    <td>3,193,799</td>
+                    <td>391,621</td>
+                    <td>3,585,420</td>
                   </tr>
+
                   <tr>
-                    <td>Frozen Cell Pellets</td>
-                    <td>Minimum 1 X 106 cells (ship on dry ice)</td>
-                    <td>Minimum 1 X 106 cells (ship on dry ice)</td>
-                    <td>Minimum 1 X 106 cells (ship on dry ice)</td>
-                    <td>Minimum 1 X 106 cells (ship on dry ice)</td>
+                    <td rowspan="5">Illumina HiSeq X10</td>
+                    <td>GATK - Lite - 2.3.9 -UC</td>
+                    <td>3,191,291</td>
+                    <td>380,768</td>
+                    <td>3,572,059</td>
                   </tr>
-                  <tr>
-                    <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
-                    <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
-                    <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
-                    <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
-                    <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
+                  <tr class="wgs-gtr wgs-gtr-gray">
+                    <td>Sentieon - 3.5 -HC</td>
+                    <td>3,213,528</td>
+                    <td>393,803</td>
+                    <td>3,607,331</td>
                   </tr>
-                  <tr>
-                    <td>5 slides (10 μM thick) 250 mm2 surface area</td>
-                    <td>8 slides (10 μM thick) 250 mm2 surface area</td>
-                    <td>8 slides (10 μM thick) 250 mm2 surface area</td>
-                    <td>8 slides (10 μM thick) 250 mm2 surface area</td>
-                    <td>8 slides (10 μM thick) 250 mm2 surface area</td>
+                  <tr class="wgs-gtr">
+                    <td>Sentieon - 3.5 -UC</td>
+                    <td>3,230,950</td>
+                    <td>379,220</td>
+                    <td>3,610,170</td>
                   </tr>
-                  <tr>
-                    <td>5 curls (10 μM thick)</td>
-                    <td>8 curls (10 μM thick)</td>
-                    <td>8 curls (10 μM thick)</td>
-                    <td>8 curls (10 μM thick)</td>
-                    <td>8 curls (10 μM thick)</td>
+                  <tr class="wgs-gtr wgs-gtr-gray">
+                    <td>GATK - 3.6 -HC</td>
+                    <td>3,184,106</td>
+                    <td>388,192</td>
+                    <td>3,572,298</td>
                   </tr>
-                  <tr>
-                    <td>Fresh or cells in sample prep agent</td>
-                    <td>Fresh or cells in sample-prep agent</td>
-                    <td>Fresh or cells in sample-prep agent</td>  
-                    <td>Fresh or cells in sample-prep agent</td>
-                    <td>Fresh or cells in sample-prep agent</td>
+                  <tr class="wgs-gtr">
+                    <td>GATK - 3.6 -UC</td>
+                    <td>3,191,477</td>  
+                    <td>376,688</td>
+                    <td>3,568,165</td>
                   </tr>
+
+                  <tr class="wgs-gtr-gray">
+                    <td rowspan="5">Illumina HiSeq 2500 PublicData (NIST)</td>
+                    <td>GATK - Lite - 2.3.9 -UC</td>
+                    <td>3,198,322</td>
+                    <td>383,952</td>
+                    <td>3,582,274</td>
+                  </tr>
+                  <tr class="wgs-gtr">
+                    <td>Sentieon- 3.5 -HC</td>
+                    <td>3,215,682</td>
+                    <td>397,577</td>
+                    <td>3,613,259</td>
+                  </tr>
+                  <tr class="wgs-gtr wgs-gtr-gray">
+                    <td>Sentieon - 3.5 -UC</td>
+                    <td>3,242,040</td>
+                    <td>386,397</td>
+                    <td>3,628,437</td>
+                  </tr>
+                  <tr class="wgs-gtr">
+                    <td>GATK - 3.6 -HC</td>
+                    <td>3,186,676</td>
+                    <td>393,300</td>
+                    <td>3,579,976</td>
+                  </tr>
+                  <tr class="wgs-gtr wgs-gtr-gray">
+                    <td>GATK - 3.6 -UC</td>
+                    <td>3,198,478</td>
+                    <td>383,917</td>
+                    <td>3,582,395</td>
+                  </tr>
+
                 </tbody>
               </table>
           </div>
@@ -432,13 +480,33 @@
             <div class="medgenome-col">
               <div class="metrics-btn">SNP Metrics</div>
               <div class="metrics-chart-box">
-                <img src="img/snp-metrics.png" alt="snpMetrics">
+                <div class="lightbox-click">
+                  <img src="img/snp-metrics.png" alt="snpMetrics">
+                </div>
+                <div class="lightbox-target">
+                  <div class="lightbox-inner-wrap">
+                    <div class="lightbox-img">
+                      <img src="img/snp-metrics.png" alt="snpMetrics">
+                    </div>
+                  </div>
+                  <span class="lightbox-close"></span>
+                </div>
               </div>
             </div>
             <div class="medgenome-col">
               <div class="metrics-btn">InDel Metrics</div>
               <div class="metrics-chart-box">
-                <img src="img/indel-metrics.png" alt="indelMetrics">
+                <div class="lightbox-click">
+                  <img src="img/indel-metrics.png" alt="indelMetrics">
+                </div>
+                <div class="lightbox-target">
+                  <div class="lightbox-inner-wrap">
+                    <div class="lightbox-img">
+                      <img src="img/indel-metrics.png" alt="indelMetrics">
+                    </div>
+                  </div>
+                  <span class="lightbox-close"></span>
+                </div>
               </div>
             </div>
           </div>
@@ -456,17 +524,22 @@
 
       </div>
 
-      <div class="mdgo-tab-btn">
+      <div class="mdgo-tab-btn smooth-up3">   
         <h3>Whole Transcriptome Sequencing</h3>
         <span class="tab-arrow"></span>
       </div>
       <div class="mdgo-tab-content-wrap whole-transcriptome-content">
         <div class="whole-genome-trans-tcr-nav">
           <ul>
-            <li><a href="#">About</a></li><li><a href="#">QC Report</a></li><li><a href="#">Informatics</a></li><li><a href="#">White paper</a></li><li><a href="#">Place and order</a></li>
+            <li><a href="#">About</a></li><li><a href="qc-reports.html">QC Report</a></li><li><a href="#">Informatics</a></li><li><a href="#">White paper</a></li><li><a href="#">Place and order</a></li>
           </ul>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusamus asperiores voluptate, illum maiores esse officia perspiciatis, excepturi tempora vel itaque! Consectetur, placeat nihil voluptatibus minima rerum optio delectus ullam.</p>
+        <p>Next generation sequencing enables gene expression analysis from normal and disease tissues with high-sensitivity. Profiling of 
+        coding and non-coding RNAs is important in revealing molecular mechanisms of development and disease. With the several 
+        options that exist for gene expression profiling, it is also possible to perform whole transcriptome profiling ranging from a single-cells to
+        thousands of cells in a sample . In addition, current methodologies allow for profiling of transcriptomes from intact RNA and
+        RNA degraded due to the storage and isolation conditions ( such as FFPE processed tissue blocks, cell-free nucleic acids etc).  At MedGenome we offer solutions
+        For performing gene expression analysis from a wide-range of sample types. Shown in table 1 is a range of sample types that we process for Whole transcriptome profiling.</p>
 
         <div class="ngs-inner-tab-wrap genome-exo-seq-inner-wrap">
           <h3>Sample requirements and library prep information</h3>
@@ -481,15 +554,15 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Frozen cell pellets</td>
-                    <td>Minimum 1 X 106 cells Minimum 1 X 106 cells (ship on dry ice)</td>
-                    <td>Minimum 1 X 106 cells (ship on dry ice)</td>
+                    <td>RNA Sequencing</td>
+                    <td><span>Recommended: 1 μg (RIN>8)</span> <span>Minimum: 50 ng (RIN < 5)</span> <span>Single-cell solutions available</span></td>
+                    <td><span>TrueSeq RNA V2, TrueSeq Stranded (No Capture probes used)</span> <span>TrueSeq RNA Access</span> <span>Trilink (No Capture probes used)</span> <span>NEB (No Capture probes used)</span></td>
                   </tr>
                 </tbody>
               </table>
           </div>
 
-          <h3>RNA analysis deliverables</h3>
+          <h3 class="mdg-mt">RNA analysis deliverables</h3>
           <div class="medgenome-row">
             <div class="medgenome-col">
               <div class="table-container rna-analysis-delvr">
@@ -501,22 +574,22 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Extracted Nucleic Acid</td>
+                      <td>Data QC (Read orientation, quality distribution, base distribution and GC distribution for all reads)</td>
                     </tr>
                     <tr>
-                      <td>Frozen Cell Pellets</td>
+                      <td>Alignment to the reference genome & transcriptome</td>
                     </tr>
                     <tr>
-                      <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
+                      <td>Gene and Isoform expression estimation in RPKM / Read count per gene</td>
                     </tr>
                     <tr>
-                      <td>5 slides (10 μM thick) 250 mm2 surface area</td>
+                      <td>Statistical Analysis including p-values and coefficient of variance (CV) between replicates</td>
                     </tr>
                     <tr>
-                      <td>5 curls (10 μM thick)</td>
+                      <td>Gene/Transcript expression levels in Excel</td>
                     </tr>
                     <tr>
-                      <td>Fresh or cells in sample prep agent</td>
+                      <td>Differential Expression Comparison</td>
                     </tr>
                   </tbody>
                 </table>
@@ -532,22 +605,19 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Extracted Nucleic Acid</td>
+                      <td>Gene fusion detection</td>
                     </tr>
                     <tr>
-                      <td>Frozen Cell Pellets</td>
+                      <td>Wiggle file for gene expression visualization on genome browser</td>
                     </tr>
                     <tr>
-                      <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
+                      <td>Pathway analysis</td>
                     </tr>
                     <tr>
-                      <td>5 slides (10 μM thick) 250 mm2 surface area</td>
+                      <td>SNV & InDel</td>
                     </tr>
                     <tr>
-                      <td>5 curls (10 μM thick)</td>
-                    </tr>
-                    <tr>
-                      <td>Fresh or cells in sample prep agent</td>
+                      <td>Splicing analysis</td>
                     </tr>
                   </tbody>
                 </table>
@@ -556,29 +626,37 @@
           </div>
         </div><!-- ngs-inner-tab-wrap -->
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusamus asperiores voluptate, illum maiores esse officia perspiciatis, excepturi tempora vel itaque! Consectetur, placeat nihil voluptatibus minima rerum optio delectus ullam.</p>
+        <p>In addition to the NGS library preparation solutions, we offer extensive  informatics solutions for whole-transcriptome profiling
+      that ranges from standard gene expression analyses to advanced analyses of splicing, pathways, visualization and tertiary
+      analyses to reveal heterogeneity and cell-types in a population as well tumor-microenvironment analyses. In addition to that we 
+      have solutions using machine-learning approaches that utilize gene expression data to predict biomarkers and classify tissue
+      types and diseases.</p>
       </div>
 
-      <div class="mdgo-tab-btn">
+      <div class="mdgo-tab-btn smooth-up4">
         <h3>TCR Sequencing copy</h3>
         <span class="tab-arrow"></span>
       </div>
       <div class="mdgo-tab-content-wrap tcr-sequencing-content">
          <div class="whole-genome-trans-tcr-nav">
           <ul>
-            <li><a href="#">About</a></li><li><a href="#">QC Report</a></li><li><a href="#">Informatics</a></li><li><a href="#">White paper</a></li><li><a href="#">Place and order</a></li>
+            <li><a href="#">About</a></li><li><a href="qc-reports.html">QC Report</a></li><li><a href="#">Informatics</a></li><li><a href="#">White paper</a></li><li><a href="#">Place and order</a></li>
           </ul>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusamus asperiores voluptate, illum maiores esse officia perspiciatis, excepturi tempora vel itaque! Consectetur, placeat nihil voluptatibus minima rerum optio delectus ullam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusamus asperiores voluptate, illum maiores esse officia perspiciatis, excepturi tempora vel itaque! Consectetur, placeat nihil voluptatibus minima rerum optio delectus ullam.</p>
+        <p>TCR profiling holds great potential not only for understanding the mechanisms of development of the normal immune response, but also in providing insights into disease mechanisms and development of new therapeutics and treatment modalities in infectious diseases, autoimmunity and in immuno-oncology1. However identification of all potential clonotypes in a diverse repertoire of TCRs requires sensitive methods of detection2,3. Next-generation sequencing (NGS) technologies have recently enabled accurate detection of TCRs, and in combination with other assays allow for the assessment of the TCR repertoire in patients- which in turn is a proxy for patient prognosis and response. At MedGenome , we provide three different NGS based methods of profiling the TCR repertoire : immunoSEQ™ assay (Adaptive Biotechnologies), SMARTer® TCR Profiling Kit (Takara Bio USA Inc), and Single-cell V(D)J Immune Profiling solution (10X™ Genomics Inc) respectively.  To learn more about the different applications and sample data generated using TCR Seq at MedGenome read the white paper.</p>
 
         <div class="major-application-tcr-row">
           <div class="major-app-heading">
             <h3>Major Applications of TCR Repertoire Profiling</h3>
           </div>
-        
-          <div class="medgenome-row">
+          <!-- <div class="medgenome-row">
             <div class="medgenome-col">
               <div class="td tr-one"><span>Therapeutics</span></div>
               <div class="td tr-two"><span>Identify antigen-specific TCRs</span></div>
@@ -594,14 +672,18 @@
               <div class="td tr-two"><span>Assay TCR repertoire (tumor & autoimmune disorders)</span></div>
               <div class="td tr-three"><span>Identify biomarkers of response</span></div>
             </div>
+          </div> -->
+
+          <div class="major-application-col">
+            <img src="img/major-application-tcr.jpg">
           </div>
         </div>
-      
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusamus asperiores voluptate, illum maiores esse officia perspiciatis, excepturi tempora vel itaque! Consectetur, placeat nihil voluptatibus minima rerum optio delectus ullam.</p>
+        
+        <p>Figure 1 .Overview of major applications of TCR Repertoire in profiling a) Therapeutics application: TCR Sequencing of lymphocytes to identify antigen specific TCR's to generate engineered T cells for adoptive cell therapy b) Diagnostics assay for clonality for auto immune disorders c) Treatment monitoring:to identify biomarkers of response.</p>
         
         <h3>Overview of the service offerings from Medgenome</h3>
 
-        <div class="table-container">
+        <div class="table-container table-scroll-mob">
           <table>
             <thead>
               <tr>
@@ -616,30 +698,29 @@
               <tr>
                 <td>immunoSEQ Kit (Adaptive Biotechnologies)</td>
                 <td>gDNA</td>
-                <td>Extracted Nucleic Acid</td>
-                <td>Extracted Nucleic Acid</td>
-                <td>Extracted Nucleic Acid</td>
+                <td>300 ng gDNA/well (Human, Mouse)</td>
+                <td>immunoSEQ Analyzer</td>
+                <td>CDR3, clonotypes</td>
               </tr>
               <tr>
-                <td>Frozen Cell Pellets</td>
-                <td>Frozen Cell Pellets</td>
-                <td>Frozen Cell Pellets</td>
-                <td>Frozen Cell Pellets</td>
-                <td>Frozen Cell Pellets</td>
+                <td>Single cell Immune profiling (10X Genomics)</td>
+                <td>Isolated cells</td>
+                <td>Single-cells (Human, Mouse)</td>
+                <td>Loupe browser</td>
+                <td>CDR3, a/b pairing and clonotypes V(D)J sequences</td>
               </tr>
               <tr>
                 <td>SMARTer TCR profiling kit (Takara Bio USA)</td>
-                <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
-                <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
-                <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
-                <td>30 mg frozen tissue or 20 mg stabilized tissue (ship on dry ice)</td>
+                <td>Isolated cells or RNA</td>
+                <td>10 ng-3 ng/50-10,000 cells(Human, Mouse)</td>
+                <td>MiXCR</td>
+                <td>CDR3, V(D)J sequences a/b pairing(from SC Kit)</td>
               </tr>
              </tbody>
           </table>
         </div>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusamus asperiores voluptate, illum maiores esse officia perspiciatis, excepturi tempora vel itaque! Consectetur, placeat nihil voluptatibus minima rerum</p>
-        
+        <p>In addition to the TCR-Seq services, MedGenome offers advanced informatics solutions for TCR-Seq based prediction of prioritization of neo-epitopes for Cancer vaccine development using  OncoPeptVAC™</p>
       </div>
 
     </div><!-- mdgo-tab-main-wrap -->
@@ -663,31 +744,35 @@
         <div class="form-col">
           <div class="form-control">
             <input type="text" name="name" placeholder="Name">
-            <span>icon</span>
+            <span><i class="icon-user"></i></span>
           </div>
           <div class="form-control">
             <input type="text" name="email" placeholder="Email">
-            <span>icon</span>
+            <span><i class="icon-envelope"></i></span>
           </div>
         </div>
         <div class="form-col">
           <div class="form-control">
             <input type="text" name="organization" placeholder="Organization">
-            <span>icon</span>
+            <span><i class="icon-office"></i></span>
           </div>
           <div class="form-control">
             <input type="text" name="phonenumber" placeholder="Phone Number">
-            <span>icon</span>
+            <span><i class="icon-phone"></i></span>
           </div>
-          <div class="form-control">
-            <input type="text" name="interest" placeholder="Interest">
-            <span>icon</span>
+          <div class="select-control-wrap">
+                  <select class="rw-select-box required nric-select-cnt">
+                    <option value="">Interest</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="India">India</option>
+                  </select>
           </div>
         </div>
         <div class="form-col">
           <div class="form-control inquiry-control">
             <textarea name="inquiry"  rows="6" placeholder="Inquiry / Message"></textarea>
-            <span>icon</span>
+            <span><i class="icon-edit"></i></span>
           </div>
         </div>
       </div>
@@ -703,7 +788,6 @@
 </section><!-- eo medgenome-form-section -->
 
 
-
 <footer class="site-footer-section">
   <div class="footer-one">
     <div class="footer-row container">
@@ -715,16 +799,16 @@
       </div>
       <div class="footer-col">
         <h3>Follow Us</h3>
-        <a href="#"><i class=""></i> Facebook</a>
-        <a href="#"><i class=""></i> Twitter</a>
-        <a href="#"><i class=""></i> Linkedin</a>
+        <a href="#"><i class="icon-facebook"></i> Facebook</a>
+        <a href="#"><i class="icon-twitter2"></i> Twitter</a>
+        <a href="#"><i class="icon-linkedin2"></i> Linkedin</a>
       </div>
       <div class="footer-col">
         <h3>Contact Info</h3>
-        <a href="#"><i class=""></i> Contact@medgenome.com</a>
-        <a href="#"><i class=""></i> (888) 440-0954</a>
+        <a href="#"><i class="icon-envelope"></i> Contact@medgenome.com</a>
+        <a href="#"><i class="icon-phone"></i> (888) 440-0954</a>
         <ul class="address">
-          <li>Foster City</li>
+          <li><i class="icon-map-marker"></i>Foster City</li>
           <li>Medgenome Inc</li>
           <li>438 Hatch Drive</li>
           <li>Foster City, CA 94404, USA</li>
