@@ -266,7 +266,6 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   max-width: 100%; 
 }
 
-
 @media(min-width:768px){
   .site-header{
     display: -webkit-flex;
@@ -278,7 +277,7 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
     justify-content: space-between;
     position: fixed;
     top:0;
-    z-index:300;
+    z-index:2000;
   }
   .site-logo-wrap {
     padding: 15px 90px;
@@ -1080,19 +1079,18 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   flex-direction: column;
 }
 .form-control{
-  border-bottom:solid 1px #b7b7b7;
-  padding-right:25px;
   margin-bottom:15px;
   position: relative;
 }
 .form-control input {
-  padding:10px 0;
+  padding:10px 25px 10px 0;
   width: 100%;
   display: block;
   color:#898989;
   font-size:16px;
   font-weight:400;
   border:none;
+  border-bottom:solid 1px #b7b7b7;
   outline: none;
 } 
 
@@ -1106,6 +1104,7 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   font-weight:400;
   border:none;
   outline: none;
+  border-bottom:solid 1px #b7b7b7;
 }
 .select-control-wrap{
   padding-bottom: 25px;
@@ -1138,25 +1137,25 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   margin-top:30px;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.form-box ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color:#898989;
   font-size:16px;
   font-weight:400;
   opacity:unset;
 }
-::-moz-placeholder { /* Firefox 19+ */
+.form-box ::-moz-placeholder { /* Firefox 19+ */
   color:#898989;
   font-size:16px;
   font-weight:400;
   opacity:unset;
 }
-:-ms-input-placeholder { /* IE 10+ */
+.form-box :-ms-input-placeholder { /* IE 10+ */
   color:#898989;
   font-size:16px;
   font-weight:400;
   opacity:unset;
 }
-:-moz-placeholder { /* Firefox 18- */
+.form-box :-moz-placeholder { /* Firefox 18- */
   color:#898989;
   font-size:16px;
   font-weight:400;
@@ -1209,17 +1208,6 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
                   font-size:26px;
                   color:#dddddd;
                 }
-                
-                /*.select-styled:active, .select-styled.active {  
-                }*/
-                /*.select-styled:active, .select-styled.active */
-
-                /*.select-styled:after {
-                  transform: rotate(-180deg);
-                  -webkit-transform: rotate(-180deg);
-                  -moz-transform: rotate(-180deg);
-                  -o-transform: rotate(-180deg);
-                }*/
 
               .select-options {
                 display: none; 
@@ -1593,8 +1581,145 @@ transform:rotate(-45deg);
   position: relative;
   top:1px;
 }
-
 /*======== End Style For Icons========*/
+
+
+
+/*=======Style for Request A Quote PopUp Box =========*/
+
+
+.requestQuotePopUp-box{
+  /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);*/
+  /*background-color:#fff;*/
+  padding:15px;
+  z-index: 999;
+  max-width:350px;
+  height:auto;
+  box-shadow: rgba(45, 51, 68, 0.4) 0px 14px 35px 0px;
+  border: 1px solid rgb(204, 204, 204);
+  position: absolute;
+  background: rgb(255, 255, 255);
+  left:0;
+  right: 0;
+  top:25%;
+  margin:auto;
+}
+.PopUpWrap{
+  position: absolute;
+  width: 100%;
+  top:25%;
+}
+.requestQuotePopUp-box .close{
+  border: 1px solid #CCC;
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  border-radius: 50%;
+  padding: 2px 8px;
+  color: #CCC;
+  cursor: pointer;
+}
+.popUpForm{
+  width: 100%;
+  display: block;
+}
+.popUpForm ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color:#898989;
+  font-size:16px;
+  font-weight:400;
+  opacity:unset;
+}
+.popUpForm ::-moz-placeholder { /* Firefox 19+ */
+  color:#898989;
+  font-size:16px;
+  font-weight:400;
+  opacity:unset;
+}
+.popUpForm :-ms-input-placeholder { /* IE 10+ */
+  color:#898989;
+  font-size:16px;
+  font-weight:400;
+  opacity:unset;
+}
+.popUpForm :-moz-placeholder { /* Firefox 18- */
+  color:#898989;
+  font-size:16px;
+  font-weight:400;
+  opacity:unset;
+}
+.popUpForm h3{
+  font-size: 16px;
+  color:#898989;
+  font-weight: 700;
+  margin-top:0px;
+}
+.type-sequencing-checkbox{
+  padding-left:20px;
+  padding-bottom:20px;
+}
+.type-sequencing-checkbox span{
+  display: inline-block;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.type-sequencing-checkbox span label{
+  margin-left: 5px; 
+  cursor: pointer;
+  color: #898989;
+}
+.type-sequencing-checkbox span input{
+  cursor: pointer;
+}
+.personal-dtl{
+  margin-bottom:30px;
+  padding-right:30px; 
+}
+.personal-dtl .form-control{
+  margin-bottom:25px;
+}
+.submit-btn-wrap{
+  padding: 10px 0 15px;
+}
+.submit-btn-wrap .submitBtn{
+  position: static;
+  padding: 13px 12px;
+}
+
+@media(min-width:420px){
+  .requestQuotePopUp-box{
+    max-width: 400px; 
+  }
+}
+
+@media(min-width:600px){
+  .requestQuotePopUp-box{
+    max-width: 580px;
+    padding:25px; 
+  }
+  .personal-dtl{
+    padding-right:175px; 
+  }
+}
+
+
+
+/*=======End Style of Request A Quote PopUp Box =========*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

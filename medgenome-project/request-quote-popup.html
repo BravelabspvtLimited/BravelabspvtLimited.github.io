@@ -1,0 +1,136 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="HirajDey">
+</head>
+<body>
+
+
+  <div class="requestQuotePopUp-box">
+    <div class="close">X</div>
+    <form action="" class="popUpForm">
+      <div class="personal-dtl">
+        <div class="form-control">
+          <input type="text" name="firstName" placeholder="First Name *">
+        </div>
+        <div class="form-control">
+          <input type="text" name="lastName" placeholder="Last Name *">
+        </div>
+        <div class="form-control">
+          <input type="email" name="email" placeholder="Email *">
+        </div>
+        <div class="form-control">
+          <input type="text" name="phone" placeholder="Phone *">
+        </div>
+      </div>
+
+      <h3>Type of sequencing</h3>
+      <div class="type-sequencing-checkbox">
+        <span>
+          <input type="checkbox" name="typeOfSequencing" id="check-wgs" value="WGS">
+          <label for="check-wgs">WGS</label>
+        </span>
+        <span>
+          <input type="checkbox" name="typeOfSequencing" id="check-wes" value="WES">
+          <label for="check-wes">WES</label>
+        </span>
+        <span>
+          <input type="checkbox" name="typeOfSequencing" id="check-rna" value="RNA">
+          <label for="check-rna">RNA</label>
+        </span>
+        <span>
+          <input type="checkbox" name="typeOfSequencing" id="check-mirna" value="miRNA">
+          <label for="check-mirna">miRNA</label>
+        </span>
+      </div>
+      <div class="type-sequencing-checkbox">
+        <span>
+          <input type="checkbox" name="typeOfSequencing" id="check-chip" value="ChIP">
+          <label for="check-chip">ChIP</label>
+        </span>
+        <span>
+          <input type="checkbox" name="typeOfSequencing" id="check-methyi" value="MethyI">
+          <label for="check-methyi">MethyI`</label>
+        </span>
+        <span>
+          <input type="checkbox" name="typeOfSequencing" id="check-tcr" value="TCR">
+          <label for="check-tcr">TCR</label>
+        </span>
+        <span>
+          <input type="checkbox" name="typeOfSequencing" id="check-singlecel" value="Single cell">
+          <label for="check-singlecel">Single cell</label>
+        </span>
+      </div>
+
+      <h3>Do you need library prep services?</h3>
+      <div class="type-sequencing-checkbox">
+        <span>
+          <input type="radio" name="library-prep"  value="Yes" id="library-yes">
+          <label for="library-yes">Yes</label>
+        </span>
+        <span>
+          <input type="radio" name="library-prep" value="No" id="libraruy-no">
+          <label for="libraruy-no">No</label>
+        </span>
+      </div>
+
+      <h3>Do you need sequencing services?</h3>
+      <div class="type-sequencing-checkbox">
+        <span>
+          <input type="radio" name="need-sequenc"  value="Yes" id="need-sequenc-yes">
+          <label for="need-sequenc-yes">Yes</label>
+        </span>
+        <span>
+          <input type="radio" name="need-sequenc" value="No" id="need-sequenc-no">
+          <label for="need-sequenc-no">No</label>
+        </span>
+      </div>
+
+       <h3>Do you need data analysis?</h3>
+      <div class="type-sequencing-checkbox">
+        <span>
+          <input type="radio" name="need-data-anlysis"  value="Yes" id="need-data-anlysis-yes">
+          <label for="need-data-anlysis-yes">Yes</label>
+        </span>
+        <span>
+          <input type="radio" name="need-data-anlysis" value="No" id="need-data-anlysis-no">
+          <label for="need-data-anlysis-no">No</label>
+        </span>
+      </div>
+
+      <div class="form-control">
+         <textarea name="inquiry"  rows="4" placeholder="Project details"></textarea>
+      </div>
+
+      <div class="im-not-robot">
+        
+      </div>
+      
+      <div class="submit-btn-wrap">
+        <input class="submitBtn" type="submit" name="submit" value="Submit">
+      </div>
+      
+    </form><!-- eo popUpForm -->
+  </div><!-- rst-quote-popup-box -->
+
+
+
+<script>
+  $(document).ready(function(){
+
+    $('.requestQuotePopUp-box .close').click(function(){
+      $('.PopUpWrap').empty();  
+      // console.log('yes');
+    });
+  
+  });
+</script>
+
+</body>
+</html>

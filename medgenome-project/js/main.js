@@ -1,5 +1,14 @@
 
 
+$(document).ready(function(){
+
+  $(".requestQuotePopupClick").click(function(){
+    $('.PopUpWrap').load("request-quote-popup.html");
+  });
+  
+});
+
+
 (function () {
       var clickItems= document.querySelectorAll('.ngs-inner-tab-btn li a');
       var skillItems = document.querySelectorAll('.ngs-inner-tab-content-wrap');
@@ -302,5 +311,11 @@ $(document).ready(function() {
   $('.lightbox-img').drags();
 
 
+
+
+
 });
+
+
+
 
