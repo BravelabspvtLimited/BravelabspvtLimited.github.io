@@ -186,9 +186,15 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
 }
 .site-nav ul li a:hover{
   background: #d9f7ff;
-  font-weight: 700;
+  font-weight: 700 !important;
   color: #40a9eb;
 }  
+.site-nav ul li a.active{
+  /*background: #d9f7ff;*/
+  font-weight: 700;
+  color: #40a9eb;
+}
+
 .contact-box{
   display: -webkit-flex;
   display: -moz-flex;
@@ -351,7 +357,7 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
 @media(min-width:1900px){ 
   .site-nav ul li{
     display: inline-block;
-    padding:0 0 0 46px;
+    padding:0 0 0 30px;
   }
 }
 
@@ -1109,13 +1115,62 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
 .select-control-wrap{
   padding-bottom: 25px;
 }
+.select-styled.active:after{
+  /*content: '';*/
+  color:#0ec2cd !important;
+}
 .form-control.inquiry-control{
   padding-right:0; 
 }
-.form-control span{
+.form-control .fm-icon{
   position: absolute;
   right:0;
   top:5px;
+}
+.select-control-wrap{
+  position: relative;
+}
+.select-control-wrap .error-alert{
+  position: absolute;
+  bottom:-32px;
+}
+.select-control-wrap .fm-mandatory{
+  left:70px;
+  top:0;
+}
+.form-control.onfocus .fm-icon i{
+  color:#0ec2cd;
+}
+.form-control.onfocus input{
+  border-bottom: solid 2px #0ec2cd;
+}
+.form-control.onfocus textarea{
+  border-bottom: solid 2px #0ec2cd;
+}
+.error-alert{
+  display: none;
+  position:absolute;
+  bottom:-19px;
+} 
+.error-alert span{
+  font-size:13px;
+  color: red;
+}
+.fm-mandatory{
+  color:#0ec2cd;
+  position: absolute;
+  top:3px;
+  font-size:22px;
+  left: 50px;
+}
+.quiry-information .submit-error-text p{
+  color:red;
+}
+.submit-error-text{
+  display: none;
+}
+.success-message{
+  /*display: none;*/
 }
 .quiry-information p{
   color: #bababa;
@@ -1272,6 +1327,7 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   .submit-row{
     position: relative;
     padding-top:30px;
+    height:70px;
   }
   .quiry-information{
     padding-right:150px;
@@ -1592,7 +1648,7 @@ transform:rotate(-45deg);
   /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);*/
   /*background-color:#fff;*/
   padding:15px;
-  z-index: 999;
+  z-index: 3000;
   max-width:350px;
   height:auto;
   box-shadow: rgba(45, 51, 68, 0.4) 0px 14px 35px 0px;
@@ -1601,13 +1657,12 @@ transform:rotate(-45deg);
   background: rgb(255, 255, 255);
   left:0;
   right: 0;
-  top:25%;
+  top:40%;
   margin:auto;
 }
 .PopUpWrap{
-  position: absolute;
+  /*position: absolute;*/
   width: 100%;
-  top:25%;
 }
 .requestQuotePopUp-box .close{
   border: 1px solid #CCC;
@@ -1701,9 +1756,30 @@ transform:rotate(-45deg);
   }
 }
 
-
-
 /*=======End Style of Request A Quote PopUp Box =========*/
+
+
+
+
+/*========== Style For Careers Page ===========*/
+
+
+
+  
+
+
+/*========== End Style of Careers Page ===========*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 

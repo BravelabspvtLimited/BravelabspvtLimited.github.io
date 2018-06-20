@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>NGS</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="HirajDey">
@@ -38,14 +38,15 @@
 
   <nav class="site-nav container">
     <ul>
-      <li><a href="#" class="active">About</a></li>
+      <li><a href="#">About</a></li>
       <li><a href="#">Immuno-oncology</a></li>
-      <li><a href="#">Ngs Services</a></li>
+      <li><a class="active" href="index.html">Ngs Services</a></li>
       <li><a href="#">Data</a></li>
       <li><a href="#">Events</a></li>
       <li><a href="#">Press</a></li>
       <li><a href="#">Publications</a></li>
       <li><a href="#">Resources</a></li>
+      <li><a href="medgenome-careers.html">Careers</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
@@ -94,7 +95,7 @@
     
     <div class="breadcrumbs-row">
       <ul>
-        <li><a href="https://www.medgenome.com/">Home</a><span> | </span></li>
+        <li><a href="index.html">Home</a><span> | </span></li>
         <li><a href="index.html" class="active">NGS</a></li>
       </ul>
     </div><!-- eo breadcrumbs-row -->
@@ -129,7 +130,7 @@
                   <tr>
                     <td>Extracted Nucleic Acid</td>
                     <td>Minimum: 200 ng (WGS/WES) 50 ng (Targeted)</td>
-                    <td>Minimum: 100 ng (DV200 > 30%)</td>
+                    <td>Minimum: 100 ng (DV<sub>200</sub> > 30%)</td>
                   </tr>
                   <tr>
                     <td>Frozen cell pellets</td>
@@ -637,7 +638,7 @@
             <li class="active"><a href="#">About</a></li><li><a href="qc-reports.html">QC Report</a></li><li><a href="https://www.medgenome.com/ngs-bioinformatics-molecular-biology-services/">Informatics</a></li><li><a href="https://www.medgenome.com/publications/?act=whitepaper">White paper</a></li><li class="requestQuotePopupClick"><a href="#">Place and order</a></li>
           </ul>
         </div>
-        <p>T-cells are the core components of our adaptive immune system. Once activated, they can directly kill cells that are foreign (cytolytic T-cells) or perform helper function (helper T-cells) to activate B-cells to make antibodies against foreign antigen. The activation of T-cells involve recognition of MHC-peptide complex by the T-cell receptors (TCR). Humans carry >109 T-cells, each expressing a unique TCR. This highly diverse repertoire of T-cells has the ability to recognize peptides originating from foreign elements such as invading pathogens and cancer cells. Each TCR recognize peptides in complex with MHC proteins presented on the surface of antigen presenting cells. Productive T-cell activation results in the clonal expansion of a specific T-cell and this expansion can be accurately determined by TCR sequencing. In cancer, TCR sequencing has predictive and prognostic value and can lead to the development of novel therapeutics such as engineered T-cells.</p>
+        <p>T-cells are the core components of our adaptive immune system. Once activated, they can directly kill cells that are foreign (cytolytic T-cells) or perform helper function (helper T-cells) to activate B-cells to make antibodies against foreign antigen. The activation of T-cells involve recognition of MHC-peptide complex by the T-cell receptors (TCR). Humans carry >10<sup>9</sup> T-cells, each expressing a unique TCR. This highly diverse repertoire of T-cells has the ability to recognize peptides originating from foreign elements such as invading pathogens and cancer cells. Each TCR recognize peptides in complex with MHC proteins presented on the surface of antigen presenting cells. Productive T-cell activation results in the clonal expansion of a specific T-cell and this expansion can be accurately determined by TCR sequencing.</p>
 
         <p>TCR profiling holds great potential not only for understanding the mechanisms of development of the normal immune response, but also in providing insights into disease mechanisms and development of new therapeutics and treatment modalities in infectious diseases, autoimmunity and in immuno-oncology<sup>1</sup>. However identification of all potential clonotypes in a diverse repertoire of TCRs requires sensitive methods of detection<sup>2,3</sup>. Next-generation sequencing (NGS) technologies have recently enabled accurate detection of TCRs, and in combination with other assays allow for the assessment of the TCR repertoire in patients- which in turn is a proxy for patient prognosis and response. At MedGenome , we provide three different NGS based methods of profiling the TCR repertoire : immunoSEQ™ assay (Adaptive Biotechnologies), SMARTer® TCR Profiling Kit (Takara Bio USA Inc), and Single-cell V(D)J Immune Profiling solution (10X™ Genomics Inc) respectively.  To learn more about the different applications and sample data generated using TCR Seq at MedGenome read the <a class="highlightonhov" href="https://www.medgenome.com/publications/?act=whitepaper">white paper.</a></p>
 
@@ -728,26 +729,37 @@
       <a class="requestQuotePopupClick" href="#">Request a quote</a>
     </div>
 
-    <form action="" class="form-box">
+    <form class="form-box validate-form" autocomplete="off" novalidate>
       <div class="form-row">
         <div class="form-col">
           <div class="form-control">
-            <input type="text" name="name" placeholder="Name">
-            <span><i class="icon-user"></i></span>
+            <input class="inputEmpt fm-name"  type="text" name="Name" placeholder="Name">
+            <span class="fm-mandatory">*</span>            
+            <span class="fm-icon"><i class="icon-user"></i></span>
+            <div class="error-alert">
+              <span>please enter your name</span>
+            </div>
           </div>
           <div class="form-control">
-            <input type="text" name="email" placeholder="Email">
-            <span><i class="icon-envelope"></i></span>
+            <input class="inputEmpt fm-email" type="text" name="Email" placeholder="Email">
+            <span class="fm-mandatory">*</span>
+            <span class="fm-icon"><i class="icon-envelope"></i></span>
+            <div class="error-alert">
+              <span>please enter your valid email</span>
+            </div>
           </div>
         </div>
         <div class="form-col">
           <div class="form-control">
-            <input type="text" name="organization" placeholder="Organization">
-            <span><i class="icon-office"></i></span>
+            <input class="inputEmpt fm-organization" type="text" name="Organization" placeholder="Organization">
+            <span class="fm-icon"><i class="icon-office"></i></span>
           </div>
           <div class="form-control">
-            <input type="text" name="phonenumber" placeholder="Phone Number">
-            <span><i class="icon-phone"></i></span>
+            <input class="inputEmpt fm-phonenumber" type="text" name="Phone Number" placeholder="Phone Number">
+            <span class="fm-icon"><i class="icon-phone"></i></span>
+            <div class="error-alert">
+              <span>please enter your phone number</span>
+            </div>
           </div>
           <div class="select-control-wrap">
                   <select class="rw-select-box required nric-select-cnt">
@@ -761,19 +773,28 @@
                     <option value="Career inquiry">Career inquiry</option>
                     <option value="Other">Other</option>
                   </select>
+                <span class="fm-mandatory">*</span>    
+                <div class="error-alert">
+                  <span>please select your interest</span>
+                </div>                
           </div>
         </div>
         <div class="form-col">
           <div class="form-control inquiry-control">
-            <textarea name="inquiry"  rows="6" placeholder="Inquiry / Message"></textarea>
-            <span><i class="icon-edit"></i></span>
+            <textarea name="Inquiry / Message"  rows="6" placeholder="Inquiry / Message"></textarea>
+            <span class="fm-icon"><i class="icon-edit"></i></span>
           </div>
         </div>
       </div>
       <div class="submit-row">
         <div class="quiry-information">
-          <p>Thank you for your interest in MedGenome.</p>
-          <p>We are reviewing your request and will get back to you within 1 business day.</p>
+          <div class="submit-error-text">
+            <p>One or more fields have an error. Please check and try again.</p>
+          </div>
+          <div class="success-message">
+            <p>Thank you for your interest in MedGenome.</p>
+            <p>We are reviewing your request and will get back to you within 1 business day.</p>
+          </div>
         </div>
         <input class="submitBtn" type="submit" name="submit" value="Submit">
       </div>
@@ -838,6 +859,7 @@
 
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
+
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>

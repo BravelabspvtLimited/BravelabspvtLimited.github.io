@@ -264,6 +264,7 @@ $(document).ready(function() {
   })();
 
 
+
   (function($) {
 
     $.fn.drags = function(opt) {
@@ -276,7 +277,7 @@ $(document).ready(function() {
             var $el = this.find(opt.handle);
         }
 
-        return $el.css('cursor', opt.cursor).on("mousedown", function(e) {
+        return $el.css('cursor', opt.cursor).bind("mousedown", function(e) {
             if(opt.handle === "") {
                 var $drag = $(this).addClass('draggable');
             } else {
@@ -287,16 +288,16 @@ $(document).ready(function() {
                 drg_w = $drag.outerWidth(),
                 pos_y = $drag.offset().top + drg_h - e.pageY,
                 pos_x = $drag.offset().left + drg_w - e.pageX;
-            $drag.css('z-index', 1000).parents().on("mousemove", function(e) {
+            $drag.css('z-index', 1000).parents().bind("mousemove", function(e) {
                 $('.draggable').offset({
                     top:e.pageY + pos_y - drg_h,
                     left:e.pageX + pos_x - drg_w
-                }).on("mouseup", function() {
+                }).bind("mouseup", function() {
                     $(this).removeClass('draggable').css('z-index', z_idx);
                 });
             });
             e.preventDefault(); // disable selection
-        }).on("mouseup", function() {
+        }).bind("mouseup", function() {
             if(opt.handle === "") {
                 $(this).removeClass('draggable');
             } else {
@@ -311,6 +312,98 @@ $(document).ready(function() {
   $('.lightbox-img').drags();
 
 
+
+  (function(){
+
+    const $formInput = $('.inputEmpt');
+    const $formInquiry = $('.form-control textarea');
+
+      $formInput.focusin(function(){
+        var $this = $(this);
+        $this.parent().addClass('onfocus');
+        $this.siblings('.fm-mandatory').css({'display':'none'});
+        $this.siblings('.error-alert').css({'display':'none'});
+        $this.removeAttr('placeholder');
+      });
+      $formInquiry.focusin(function(){
+        var $this = $(this);
+        $this.parent().addClass('onfocus');
+        $this.siblings('.fm-mandatory').css({'display':'none'});  
+        $this.removeAttr('placeholder');
+      });
+
+      $formInput.focusout(function(){
+        var $this = $(this);
+        $this.parent().removeClass('onfocus');
+
+        if($this.val() == ''){
+          $this.siblings('.fm-mandatory').css({'display':'block'});
+        }else{
+          $this.siblings('.fm-mandatory').css({'display':'none'});
+        }  
+        $this.attr('placeholder',$this.attr('name'));
+      });
+      $formInquiry.focusout(function(){
+        var $this = $(this);
+        $this.parent().removeClass('onfocus');  
+        $this.attr('placeholder',$this.attr('name'));
+      });
+
+      $('.select-styled').click(function(){
+        var $this = $(this); 
+        $this.parents('.select-control-wrap').find('.fm-mandatory').css({'display':'none'});
+        $this.parents('.select-control-wrap').find('.error-alert').css({'display':'none'});
+
+      });
+
+      $('.select-options li').click(function(){
+        var $this = $(this);
+        if($this.text() === 'Interest'){
+          $this.parents('.select-control-wrap').find('.fm-mandatory').css({'display':'block'});
+        }
+      });
+
+
+      // const $mobile = $('');
+      const $submitError = $('.submit-error-text');
+      const $successMessage = $('.success-message');
+
+      const $email = $('.form-control input[name="Email"]');
+      const $emailRegex = /^\b[a-z0-9._%-]+@[a-z0-9.-]+\.[a-z]{2,4}\b$/;
+
+
+      $( ".validate-form" ).submit(function(event) {
+        
+        $formInput.each(function(){
+
+          let $this = $(this);
+          if($this.val() == ''){
+            $this.siblings('.error-alert').css({'display':'block'});
+            event.preventDefault();  
+          }else{
+            $this.siblings('.error-alert').css({'display':'none'});
+            event.preventDefault();
+          }
+
+        });
+
+          if(!$email.val().match($emailRegex)){
+            $email.siblings('.error-alert').css({'display':'block'});
+            event.preventDefault();          
+          }
+          
+          if($('.select-styled').text() === 'Interest'){
+            $('.select-styled').parents('.select-control-wrap').find('.error-alert').css({'display':'block'});
+            event.preventDefault();          
+          }else{
+            $('.select-styled').parents('.select-control-wrap').find('.error-alert').css({'display':'none'});
+            event.preventDefault();
+          }        
+
+      });
+
+
+  })();
 
 
 
