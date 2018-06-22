@@ -32,9 +32,16 @@ $(document).ready(function(){
 
               else{
                 skillItems[x].style.display ='none';
-              }
-              
+              }  
             }
+
+            if(thisAttr == 'sequencing'){
+              $('.ngs-service-figure1').css({'display':'none'});
+            }else{
+              $('.ngs-service-figure1').css({'display':'block'});
+
+            }
+
           }
         }
 
@@ -404,6 +411,15 @@ $(document).ready(function() {
 
 
   })();
+
+
+
+  // ========= Script For Careers Page =======
+
+
+  
+
+  // ========= Script For Careers Page =======
 
 
 
