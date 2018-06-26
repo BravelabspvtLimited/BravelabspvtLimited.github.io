@@ -150,7 +150,7 @@ box-shadow: 0px 2px 10px 0px rgba(0,0,0, 0.4);
   left: 0;
   right: 0;
   width: 100%;
-  z-index:100;
+  z-index:500;
   background-color:#fff;
   overflow: hidden;
   transition: height 700ms; 
@@ -875,7 +875,9 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   font-size:18px;
   margin:20px 0 15px;
   text-align: center;
+  font-weight:700;
 }
+
 .varimat-list li{
   margin:5px 0; 
 }
@@ -1938,7 +1940,7 @@ box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.5);
   padding:20px 0;
 }
 .job-title-box h3{
-  font-size:24px;
+  font-size:20px;
   color:#3C3C3C;
   margin:0;
 }
@@ -1947,8 +1949,8 @@ box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.5);
   right:0;
   top:15px;
   background-color:#10C9DE; 
-  width:38px;
-  height:38px;
+  width:35px;
+  height:35px;
   border-radius:50%;
   cursor: pointer;
 }
@@ -1958,7 +1960,7 @@ box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.5);
   background-color:#fff;
   display: block;
   position: absolute;
-  top:19px;
+  top:17px;
   left:0;
   right:0;
   margin:auto;
@@ -1991,9 +1993,9 @@ box-shadow: 0px 0px 8px -5px rgba(0,0,0,1);
 }
 .job-dtl-box ul li{
   list-style-type: none;
-    transition: 700ms;
-  -webkit-transition: 7000ms;
-  -moz-transition: 700ms;
+    transition: 300ms;
+  -webkit-transition: 3000ms;
+  -moz-transition: 300ms;
 }
 .job-dtl-box ul li a{
   text-decoration: none;
@@ -2008,9 +2010,9 @@ box-shadow: 0px 0px 8px -5px rgba(0,0,0,1);
 }
 .job-dtl-box ul li:hover{
   background-color:#10c9de;
-  transition: 700ms;
-  -webkit-transition: 700ms;
-  -moz-transition: 700ms;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
 }
 .job-dtl-box ul li:hover a{
   color:#fff;
@@ -2018,6 +2020,49 @@ box-shadow: 0px 0px 8px -5px rgba(0,0,0,1);
 .job-dtl-box ul li a span{
   padding-right:25px;
 }
+.culture-strengths-section{
+  background-image: url(../img/culture-strengths.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: relative;
+  background-position: bottom -200px right 50%;
+  padding: 50px 0;
+}
+.culture-strengths-section .container{
+  position: relative;
+  z-index:100;
+}
+.culture-strengths-section h2{
+  font-size: 28px;
+  color:#3C2C3C;
+  margin: 0;
+}
+.culture-strengths-section p{
+  color:#3C3C3C;
+}
+.medgenome-wculture-carousel-wrap{
+  /*height:200px;*/
+}
+.culture-strengths-section .section-overlay{
+   background:rgba(400,400,400, 0.9);
+  background: -webkit-linear-gradient(rgba(400,400,400), rgba(400,400,400,0.9), rgba(400,400,400,0.7));
+  background: -o-linear-gradient(rgba(400,400,400), rgba(400,400,400,0.9), rgba(400,400,400,0.7));
+  background: linear-gradient(rgba(400,400,400), rgba(400,400,400,0.9), rgba(400,400,400,0.7));
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+}
+
+.jobCartBoxToggle{
+  display: none;
+  
+}
+
+
 
 
 @media(min-width:557px){
@@ -2044,6 +2089,19 @@ box-shadow: 0px 0px 8px -5px rgba(0,0,0,1);
   }
   .sort-col{
     flex-basis:49%; 
+  }
+  .job-title-box h3{
+    font-size:24px;
+  }
+  .collapse-btn{ 
+    width:38px;
+    height:38px;
+  }
+  .collapse-btn span{
+    top:19px;
+  }
+  .culture-strengths-section h2{
+    font-size: 30px;
   }
 }
 
@@ -2077,8 +2135,496 @@ box-shadow: 0px 0px 8px -5px rgba(0,0,0,1);
   .medgenome-joblist-wrap .container{ 
     width: 720px;
   }
-  
 }
+
+
+/*======= Style of Careers job details page ========*/
+  
+  .hero-banner-bottom-box .job-heading{
+    position: relative;  
+  }
+  .hero-banner-bottom-box .job-heading h2{ 
+    font-size:36px;
+    color:#3C3C3C;
+    margin:0;
+  }
+  .hero-banner-bottom-box .job-heading h4{
+    font-size:24px;
+    color: #1A74AE;
+    margin: 20px 0 10px;
+  }
+  .hero-banner-bottom-box .job-heading span{
+    color:#3C3C3C;
+    font-size:18px;
+    font-weight:300;
+  }
+  .job-apply-btn{
+    background: linear-gradient(90deg, #03c2f4, #3eeadc);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color:#fff;
+    font-weight:700;
+    text-align: center;
+    padding:4px 30px 8px;
+    font-size: 16px;
+    border:none;
+    cursor:pointer;
+    margin-top:20px;
+    width:100px;
+  }
+
+  .job-type-wrap{
+    padding-left:70px;
+    position: relative;
+    margin:20px 0 25px;
+  }
+  .job-type-wrap span{
+    position: absolute;
+    left:0;
+    top:10px;    
+  }
+  .job-type-wrap ul{
+    margin:0;
+    padding:0;
+  }
+  .job-type-wrap ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left:30px;
+    margin-bottom: 5px;
+    padding:10px 20px 12px;
+    font-size: 14px;
+    color:#CCCCCC;
+  }
+  .job-type-wrap ul .select-type{
+    background-color:#fff;
+    color:#1A74AE;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .job-type-wrap ul .unselect-type{
+    color:#3C3C3C;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .medgenome-joblist-wrap .container:after{
+    clear: both;
+    content: "";
+    display: block;
+  }
+  .medgenome-joblist-wrap .container .job-apply-btn{
+    float: right;
+    position: static;
+    padding:7px 20px 9px;
+  }
+  .medgenome-joblist-wrap.jobdetails-wrap .job-cart-wrap{
+    border-bottom: none;
+  }
+  .culture-strengths-section.bioInformatics-department{
+    padding-top: 50px;
+  }
+  .may-be-joblink h2{
+    margin-top:40px;
+  }
+  .may-be-joblink ul{
+    margin:0;
+    padding-bottom:50px;
+    padding-left: 0;
+    padding-top:20px;
+  }
+  .may-be-joblink ul li{
+    list-style-type: none;
+    display: block;
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .may-be-joblink ul li:nth-child(odd){
+    background-color:#F1FEFF;   
+  }
+  .may-be-joblink ul li a{
+    color:#3C3C3C;
+    text-decoration:none;
+    display: block;
+    padding:15px 20px;
+  }
+  .callto-back{
+    list-style-type: none;
+    width:160px;
+    margin:auto;
+  }
+  .callto-back a{
+    color:#0AC7F1;
+    text-decoration: none;
+    border-bottom: solid 2px #0AC7F1;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+  }
+  .bioInformatics-department .section-overlay{
+    background: rgba(248, 248, 248, 0.9);
+    background: linear-gradient(rgba(248, 248, 248), rgba(248, 248, 248), rgba(248, 248, 248, 0.9),rgba(248, 248, 248, 0.9));
+  }
+
+  
+  .career-jobapply-form .form-input-col .form-control{
+    margin-bottom: 30px;
+  }
+  .career-jobapply-form .form-input-col h4{
+    margin-top:0;
+    margin-bottom:20px;
+    color:#000;
+    font-size:20px;
+  }
+  
+  .career-jobapply-form .form-input-row.m-b{
+    margin-bottom: 40px;
+  }
+  .career-jobapply-form .form-input-col .work-exp{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+  } 
+  .career-jobapply-form .form-input-col .work-exp .form-control{
+    flex-basis:45%;
+  }
+  .career-jobapply-form .form-input-col .work-exp .form-control input{
+    padding-right: 0;
+  }
+
+  .signinwith-social{
+    margin:0;
+    padding:0;  
+    max-width:280px;
+  }
+  .signinwith-social li{
+    margin-bottom:20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .signinwith-social li:hover{
+    background-color: rgba(0,0,0, 0.0) !important;
+  }
+  .signinwith-social li a{
+    padding:20px 15px;
+    font-weight: 700 !important;
+    font-size:14px !important;
+  }
+  .signinwith-social li:nth-child(odd){
+    background-color:rgba(0,0,0, 0.0) !important;
+  }
+  .signinwith-social .linkdin{
+    background-color:#007AB9;
+    color:#fff;
+  }
+  .signinwith-social .glassdoor{
+    background-color:#0CAA41;
+    color:#fff;
+  }
+  .signinwith-social .angellist{
+    background-color:#FFFFFF;
+    color:#000;
+  }
+
+  .signinwith-social .linkdin:hover{
+    color:#fff;
+  }
+  .signinwith-social .glassdoor:hover{
+    color:#fff;
+  }
+  .signinwith-social .angellist:hover{
+    color:#000;
+  }
+
+  .career-jobapply-form .submitBtn{
+    text-transform: capitalize;
+    margin-top: 0;
+    padding: 10px 15px 10px 30px;
+  }
+  .career-jobapply-form .submit-application-row .form-input-col li{
+   list-style-type: none;
+   margin-top:30px; 
+   font-size: 14px;
+  }
+  .career-jobapply-form .submit-application-row .form-input-col li span{
+    color: #858585; 
+  }
+  .career-jobapply-form .submit-application-row .form-input-col li a{
+    color: #03C2F4;
+    text-decoration: none; 
+  }
+  .job-apply-btn span{
+    margin-right: 20px;
+    position: relative;
+  }
+  .job-apply-btn span .icon-submit-applicationSVG{ 
+    position: absolute;
+    left: -7px;
+    top: 2px;
+    font-size: 18px;
+  }
+  .job-heading .job-apply-btn span{
+    margin-right: 10px;
+  } 
+   .job-heading .job-apply-btn span .icon-submit-applicationSVG{
+    left: -17px;
+    top:4px;
+    position: absolute;
+   }
+
+  .submit-application-row .form-input-col{
+    position: relative;
+  }
+   .submit-application-row .form-input-col .submitBtnIcon:before{
+    content: "\e911";
+    display: block;
+    font-family: 'MedgenomeIcon' !important;
+    position: absolute;
+    top: 6px;
+    left: 6px;  
+    font-size: 18px;
+    color: #fff;
+   }
+
+
+
+
+  
+  @media(min-width:557px){
+    .job-apply-btn{
+      position: absolute;
+      right:0;
+      bottom:5px;
+    }
+    .hero-banner-bottom-box .job-heading h4{
+      margin: 30px 0 25px;
+    }
+    .may-be-joblink ul li{
+     display: inline-block;
+     margin-right:25px;
+    }
+
+  }
+
+  @media(min-width:768px){
+    .career-jobapply-form .form-input-row{
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: space-between;    
+    }
+    .career-jobapply-form .form-input-col{
+      flex-basis:47%;
+    }
+    .career-jobapply-form .form-input-col.f-1{
+      flex-basis:100%;
+    }
+    .career-jobapply-form .form-input-col .submitBtn{
+      position: static;
+    }
+    .signinwith-social{
+      max-width:100%; 
+    }
+    .signinwith-social li{
+      display: inline-block;
+      margin-right:20px;
+    }
+    .signinwith-social li:nth-child(3){
+      margin-right: 0;
+    }
+    .signinwith-social li a span{
+      position: relative;
+      margin-right: 5px;
+    }
+    .signinwith-social li a span i{
+      position: absolute;
+      left:-5px;
+      font-size: 30px;
+    }
+    .signinwith-social li a span i.icon-linkedin2{
+      top:-10px;
+    }
+    .signinwith-social li a span i.icon-glassdoor{
+      top:-7px;
+    }
+    .signinwith-social li a span i.icon-angellist{
+      top:-7px;
+    }
+    .fileupload-wrap .form-control span.uploadIcon{
+      position: absolute;
+      right: 0;
+      top:9px;
+      padding:5px 7px;
+      display: block;
+      box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+    }
+    .fileupload-wrap .form-control span.uploadIcon .icon-upload2{
+      top:0;
+      color:#000;
+    }
+    .career-jobapply-form .select-styled{
+      color: #898989;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .career-jobapply-form .select-control-wrap{
+      padding:6px 0;
+    }
+
+    .career-jobapply-form .select-options{
+      width: 100%;
+    }
+
+    .career-jobapply-form .form-input-row.submit-application-row .form-input-col:nth-child(1){
+      flex-basis:40%;
+    }
+    .career-jobapply-form .form-input-row.submit-application-row .form-input-col:nth-child(2){
+      flex-basis:44%;
+    }
+     .career-jobapply-form .submit-application-row .form-input-col li{
+      margin-top:0px; 
+    }
+  }
+
+/*======= End style of Careers job details page ========*/
+
+
+
+
+/*======= Style of Careers Apply Successfully page ======*/
+
+.text-about-job.apply-successfull p{
+  font-size: 20px;
+  font-weight: 300;
+  margin:15px 0 35px;
+}
+.text-about-job.apply-successfull .career-jobapply-form{
+  margin-top:100px;
+  margin-bottom:25px;
+}
+.text-about-job.apply-successfull ul li{
+  display: inline-block;
+  margin-left:3px;
+}
+.text-about-job.apply-successfull ul li:hover{
+  background-color: rgba(0,0,0, 0.0);
+}
+.text-about-job.apply-successfull ul li:nth-child(odd){
+  background-color: rgba(0,0,0, 0.0);
+}
+.text-about-job.apply-successfull ul li a{
+  padding:0; 
+  color: #000 !important;
+  font-size:14px; 
+}
+.text-about-job.apply-successfull ul li a:hover{
+  color: #000;
+}
+
+/*=======End Style of Careers Apply Successfully page ======*/
+
+
+
+/*====== Style of Carousel ======*/
+.medgenome-wculture-carousel-wrap{
+  padding-top: 35px; 
+}
+.medgenome-wculture-carousel-wrap .owl-buttons{
+  position: absolute;
+  width: 100%;
+  top:45%;
+  background-color: red;     
+}
+.owl-theme .owl-controls .owl-buttons div{
+  margin:0 !important;
+}
+.medgenome-wculture-carousel-wrap .owl-buttons .owl-prev{
+  width: 20px;
+  height: 60px;
+  background-color:rgba(400,400,400, 0.4);
+  position: absolute;
+  left: 0px;
+  border:solid 1px #707070;
+  border-radius: 4px
+}
+.medgenome-wculture-carousel-wrap .owl-buttons .owl-next{
+  width: 20px;
+  height: 60px;
+  background-color: green;
+  position: absolute;
+  right:0px;
+  background-color:rgba(400,400,400, 0.4);
+  border:solid 1px #707070;
+  border-radius: 4px
+}
+.medgenome-wculture-carousel-wrap .owl-buttons .owl-prev:before{
+  content: "\e90e";
+  font-family: 'MedgenomeIcon' !important;
+  font-size:25px;
+  color:#949494;
+  position: absolute;
+  top:10px;
+  left:-4px;
+}
+.medgenome-wculture-carousel-wrap .owl-buttons .owl-next:before{
+  content: "\e90d";
+  font-family: 'MedgenomeIcon' !important;
+  font-size:25px;
+  color:#949494;
+  position: absolute;
+  right:-4px;
+  top:10px;
+}
+
+.medgenome-wculture-carousel-wrap .owl-controls .owl-pagination{
+  display: none !important;   
+}
+.medgenome-wculture-carousel-wrap .slide-item img{
+  display: block;
+  width: 100%;
+}
+.medgenome-wculture-carousel-wrap .slide-item{
+  margin: 0 10px;
+  position: relative;
+}
+.medgenome-wculture-carousel-wrap .slide-text{
+  position:absolute;
+  bottom:0;
+  padding:10px;
+  background-color:#fff;
+}
+.medgenome-wculture-carousel-wrap .slide-text p{
+  margin:0;
+  font-size: 14px;
+}
+.medgenome-wculture-carousel-wrap .culture-time{
+  position: absolute;
+  padding:0 15px 2px;
+  right: 0;
+  bottom:10px;
+  display: block;
+  background-color: rgba(0,0,0, 0.9);
+  color: #fff;
+  font-size: 14px;
+} 
+
+
+@media(min-width:768px){
+  .medgenome-wculture-carousel-wrap .owl-buttons .owl-prev{
+    left: -13px;
+  }
+  .medgenome-wculture-carousel-wrap .owl-buttons .owl-next{
+    right:-12px;
+  }
+}
+
+
+/*======End Style of Carousel ======*/
 
 
 /*========== End Style of Careers Page ===========*/

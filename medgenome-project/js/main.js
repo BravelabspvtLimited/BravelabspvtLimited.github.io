@@ -5,14 +5,69 @@ $(document).ready(function(){
   $(".requestQuotePopupClick").click(function(){
     $('.PopUpWrap').load("request-quote-popup.html");
   });
-  
-});
 
 
-(function () {
+
+/*================================================
+    =           Script For Select Option             =
+    ================================================*/
+
+
+    $('select.rw-select-box').each(function(){
+      var $this = $(this), numberOfOptions = $(this).children('option').length;
+
+      $this.addClass('select-hidden');
+      $this.wrap('<div class="select"></div>');
+      $this.after('<div class="select-styled"></div>');
+
+      var $styledSelect = $this.next('div.select-styled');
+      $styledSelect.text($this.children('option').eq(0).text());
+
+      var $list = $('<ul />', {
+          'class': 'select-options'
+      }).insertAfter($styledSelect);
+
+      for (var i = 0; i < numberOfOptions; i++) {
+          $('<li />', {
+              text: $this.children('option').eq(i).text(),
+              rel: $this.children('option').eq(i).val()
+          }).appendTo($list);
+      }
+
+      var $listItems = $list.children('li');
+
+      $styledSelect.click(function(e) {
+          e.stopPropagation();
+          $('div.select-styled.active').not(this).each(function(){
+              $(this).removeClass('active').next('ul.select-options').hide();
+          });
+          $(this).toggleClass('active').next('ul.select-options').toggle();
+      });
+
+      $listItems.click(function(e) {
+          e.stopPropagation();
+          $styledSelect.text($(this).text()).removeClass('active');
+          $this.val($(this).attr('rel'));
+          $this.trigger('change');
+          $list.hide();
+          //console.log($this.val());
+      });
+
+      $(document).click(function() {
+          $styledSelect.removeClass('active');
+          $list.hide();
+      });
+
+    });
+
+  /*=====  End of Script For Select Option   ====*/
+
+
+   (function () {
+
       var clickItems= document.querySelectorAll('.ngs-inner-tab-btn li a');
       var skillItems = document.querySelectorAll('.ngs-inner-tab-content-wrap');
-        	// console.log(skillItems);
+          // console.log(skillItems);
 
         var i = 0;
         for(i; i < clickItems.length; i++){
@@ -35,7 +90,7 @@ $(document).ready(function(){
               }  
             }
 
-            if(thisAttr == 'sequencing'){
+            if(thisAttr == 'sequencing' || thisAttr == 'bioinformaticsAnalysis' || thisAttr == 'libraryPrep'){
               $('.ngs-service-figure1').css({'display':'none'});
             }else{
               $('.ngs-service-figure1').css({'display':'block'});
@@ -46,6 +101,121 @@ $(document).ready(function(){
         }
 
   })();
+
+
+
+
+(function(){
+
+    window.onload = function(){
+      // alert('yes');
+      var $jobCartWrap = $('.job-cart-wrap');
+
+      $jobCartWrap.each(function(){
+
+        var $jobTitleText = $(this).find('.title').text();
+        var $jobArea = $(this).find('.job-area').text();
+
+        // console.log($jobTitleText);
+
+        var $setAttrValJobTitle = $(this).attr('job_title', $jobTitleText.replace(/ +/g, "").toLowerCase());
+
+        var $setAttrValJobArea = $(this).attr('job_area', $jobArea.replace(/ +/g, "").toLowerCase());
+
+        // console.log($setAttrValJobArea.attr('job_area'));
+
+        var $setAttrJobTitleArea = $(this).attr('job_title_area', $setAttrValJobTitle.attr('job_title') + $setAttrValJobArea.attr('job_area'));
+
+        console.log($setAttrJobTitleArea.attr('job_title_area')); 
+
+      });
+
+    };
+
+})();
+
+
+
+  (function () {
+    
+      var clickItems = document.querySelectorAll('.sort-department .select-options li');
+
+      var skillItems = document.querySelectorAll('.job-cart-wrap');
+
+        var i = 0;
+        for(i; i < clickItems.length; i++){
+
+          clickItems[i].onclick = function(){
+
+            var thisContent = this.textContent;
+            // console.log(thisContent);
+            var setAttr = this.setAttribute('rel', thisContent.replace(/ +/g, "").toLowerCase());
+
+            var thisAttr = this.getAttribute('rel');
+            // console.log(thisAttr);
+
+            var x = 0;
+            for(x; x < skillItems.length; x++){
+
+              var skillsAttr = skillItems[x].getAttribute('job_title');
+
+              // console.log(skillsAttr);              
+              if(thisAttr == skillsAttr){
+                skillItems[x].style.display ='block';
+              }else if(thisAttr == 'department'){
+                skillItems[x].style.display = 'block';
+
+              }else{
+                skillItems[x].style.display ='none';
+              }
+              
+            }
+          }
+        }
+
+  })();
+
+
+   (function () {
+    
+      var clickItems = document.querySelectorAll('.sort-country .select-options li');
+
+      var skillItems = document.querySelectorAll('.job-cart-wrap');
+
+        var i = 0;
+        for(i; i < clickItems.length; i++){
+
+          clickItems[i].onclick = function(){
+
+            var thisContent = this.textContent;
+            // console.log(thisContent);
+            var setAttr = this.setAttribute('rel', thisContent.replace(/ +/g, "").toLowerCase());
+
+            var thisAttr = this.getAttribute('rel');
+            // console.log(thisAttr);
+
+            var x = 0;
+            for(x; x < skillItems.length; x++){
+            
+              var jobAreaAttrCh = skillItems[x].getAttribute('job_area');
+
+              if(thisAttr == jobAreaAttrCh){
+                skillItems[x].style.display ='block';
+              }else if(thisAttr == 'country'){
+                skillItems[x].style.display = 'block';
+
+              }else{
+                skillItems[x].style.display ='none';
+              }
+              
+            }
+          }
+        }
+
+  })();
+
+
+});
 
 
 
@@ -199,62 +369,6 @@ $(document).ready(function() {
 
   // end script for LightBox
 
-
-
-/*================================================
-    =           Script For Select Option             =
-    ================================================*/
-
-
-    $('select.rw-select-box').each(function(){
-      var $this = $(this), numberOfOptions = $(this).children('option').length;
-
-      $this.addClass('select-hidden');
-      $this.wrap('<div class="select"></div>');
-      $this.after('<div class="select-styled"></div>');
-
-      var $styledSelect = $this.next('div.select-styled');
-      $styledSelect.text($this.children('option').eq(0).text());
-
-      var $list = $('<ul />', {
-          'class': 'select-options'
-      }).insertAfter($styledSelect);
-
-      for (var i = 0; i < numberOfOptions; i++) {
-          $('<li />', {
-              text: $this.children('option').eq(i).text(),
-              rel: $this.children('option').eq(i).val()
-          }).appendTo($list);
-      }
-
-      var $listItems = $list.children('li');
-
-      $styledSelect.click(function(e) {
-          e.stopPropagation();
-          $('div.select-styled.active').not(this).each(function(){
-              $(this).removeClass('active').next('ul.select-options').hide();
-          });
-          $(this).toggleClass('active').next('ul.select-options').toggle();
-      });
-
-      $listItems.click(function(e) {
-          e.stopPropagation();
-          $styledSelect.text($(this).text()).removeClass('active');
-          $this.val($(this).attr('rel'));
-          $this.trigger('change');
-          $list.hide();
-          //console.log($this.val());
-      });
-
-      $(document).click(function() {
-          $styledSelect.removeClass('active');
-          $list.hide();
-      });
-
-    });
-
-
-  /*=====  End of Script For Select Option   ====*/
 
 
 
@@ -415,16 +529,40 @@ $(document).ready(function() {
 
 
   // ========= Script For Careers Page =======
+ 
 
 
-  
+(function(){
+
+  const $jobCartCollapseBtn = $('.collapse-btn');
+  // const $collapseJobCart = $('.collapseCart');    
+
+   $jobCartCollapseBtn.click(function(){
+
+    let $this = $(this);
+
+    const $jobCart = $this.parents('.job-title-box').siblings('.collapseCart');
+
+    if($jobCart.is(':visible')){
+        $jobCart.slideUp('slow');
+        $this.children('.addplus').css({'display':'block'});
+      }else{
+        $jobCart.slideDown('slow');
+        $this.children('.addplus').css({'display':'none'});
+      }
+
+   });
+
+})();
+
+
+
 
   // ========= Script For Careers Page =======
 
 
 
 });
-
 
 
 
