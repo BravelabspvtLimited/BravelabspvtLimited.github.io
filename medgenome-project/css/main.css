@@ -2612,6 +2612,30 @@ box-shadow: 0px 0px 8px -5px rgba(0,0,0,1);
   color: #fff;
   font-size: 14px;
 } 
+.modalBox{
+  position: fixed !important;
+  z-index: 3000;
+  padding-top: 50px;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(111, 111, 111, 0.9);
+  /*overflow: auto;*/
+  display: none;
+}
+.culture-strength-video-wrap{
+    background-color: rgb(255, 255, 255);
+    max-width: 800px;
+    margin: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(136, 136, 136);
+    border-image: initial;
+    border-radius: 5px;
+}
+
+
 
 
 @media(min-width:768px){

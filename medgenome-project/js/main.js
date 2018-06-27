@@ -556,9 +556,28 @@ $(document).ready(function() {
 })();
 
 
+(function(){
+
+  const $clickPopUp = $('.slide-item');
+  const $modal = $('.modalBox');
+  const $close = $('.close');
+
+$clickPopUp.each(function(){
+
+  $(this).click(function(){
+    $modal.css({'display':'block'});
+  });
+
+  $close.click(function(){
+    $modal.css({'display':'none'});
+  });
+
+});
+  
+})();
 
 
-  // ========= Script For Careers Page =======
+// ========= Script For Careers Page =======
 
 
 
