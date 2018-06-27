@@ -578,7 +578,7 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
 }
 .ngs-inner-tab-btn .active{
   background-color:#3bb0d5;
-  color:#fff;
+  color:#fff; 
 }
 .ngs-inner-tab-btn .active .down-Arrow{
   display: block; 
@@ -1919,9 +1919,9 @@ box-shadow: 0px -9px 60px 7px rgba(248,248,248,3);
 .joblist-shadow-box{
   background-color:#F8F8F8;
   height:270px;
-  -webkit-box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.5);
--moz-box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.5);
-box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0px 0px 11px -5px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 11px -5px rgba(0,0,0,0.5);
+box-shadow: 0px 0px 11px -5px rgba(0,0,0,0.5);
   position: absolute;
   top:0;
   width: 100%;
@@ -1933,6 +1933,10 @@ box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.5);
 }
 .job-cart-wrap{
  border-bottom: dashed 2px #CACACA;
+}
+
+.medgenome-career-main-page .job-cart-wrap{
+ background-color:#F8F8F8;
 }
 .job-title-box{
   position: relative;
@@ -2025,7 +2029,7 @@ box-shadow: 0px 0px 8px -5px rgba(0,0,0,1);
   background-repeat: no-repeat;
   background-size:cover;
   position: relative;
-  background-position: bottom -200px right 50%;
+  background-position: bottom 0 right 50%;
   padding: 50px 0;
 }
 .culture-strengths-section .container{
@@ -2058,12 +2062,8 @@ box-shadow: 0px 0px 8px -5px rgba(0,0,0,1);
 }
 
 .jobCartBoxToggle{
-  display: none;
-  
+  display: none;  
 }
-
-
-
 
 @media(min-width:557px){
   .medgenome-careers-bnr{
@@ -2581,9 +2581,6 @@ box-shadow: 0px 0px 8px -5px rgba(0,0,0,1);
   top:10px;
 }
 
-.medgenome-wculture-carousel-wrap .owl-controls .owl-pagination{
-  display: none !important;   
-}
 .medgenome-wculture-carousel-wrap .slide-item img{
   display: block;
   width: 100%;
@@ -2612,31 +2609,53 @@ box-shadow: 0px 0px 8px -5px rgba(0,0,0,1);
   color: #fff;
   font-size: 14px;
 } 
-.modalBox{
+.culture-strength-popUp{
   position: fixed !important;
   z-index: 3000;
   padding-top: 50px;
+  padding-bottom: 50px;
   left: 0px;
   top: 0px;
   width: 100%;
   height: 100%;
   background-color: rgba(111, 111, 111, 0.9);
-  /*overflow: auto;*/
+  overflow: auto;
   display: none;
 }
-.culture-strength-video-wrap{
-    background-color: rgb(255, 255, 255);
-    max-width: 800px;
+.culture-strength-popUp-content{
+    background-color:#fff;
+    max-width:95%;
     margin: auto;
     border-width: 1px;
     border-style: solid;
     border-color: rgb(136, 136, 136);
     border-image: initial;
-    border-radius: 5px;
+    padding: 25px;
 }
-
-
-
+.culture-strength-popUp-content h2{
+  margin-top:0;
+  font-size: 30px;
+}
+.culture-strength-video-wrap{
+  position: relative;
+  background-color:rgba(0,0,0,0.6);
+  height:600px;
+}
+.culture-strength-video-wrap .close{
+  width: 30px;
+  height: 30px;
+  border-radius:50%;
+  border:solid 2px #fff;
+  display: block;
+  position: absolute;
+  top:20px;
+  right: 20px;
+  font-size:25px;
+  color:#fff;
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+}
 
 @media(min-width:768px){
   .medgenome-wculture-carousel-wrap .owl-buttons .owl-prev{
@@ -2645,14 +2664,126 @@ box-shadow: 0px 0px 8px -5px rgba(0,0,0,1);
   .medgenome-wculture-carousel-wrap .owl-buttons .owl-next{
     right:-12px;
   }
+  .culture-strength-popUp-content h2{
+    font-size: 36px;
+  }
 }
-
+@media(min-width:1200px){
+  .culture-strength-popUp-content{
+    max-width: 80%;
+  }
+}
 
 /*======End Style of Carousel ======*/
 
 
-/*========== End Style of Careers Page ===========*/
+/*===== Style of Life at MedGenome =====*/
 
+  .lifeat-medgenome-section{
+    padding: 50px 0; 
+  }
+  .lifeat-medgenome-section h2{
+    margin:0 0 30px;
+    font-size:30px;
+    color:#3C2C3C;
+  }
+  .lifeat-medgenome-row{
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .lifeat-medgenom-col{
+    margin-bottom:20px;
+    /*height: 300px;*/
+    background-color:lightgray;
+    padding:130px 50px;
+  }
+
+  @media(min-width:992px){
+    .lifeat-medgenome-row{
+      flex-direction: row;
+      margin-bottom:9px;
+     }
+    .lifeat-medgenom-col.f-2{
+      flex-basis:49.6%;
+      margin-bottom:0;
+    }
+    .lifeat-medgenom-col.f-3{
+      flex-basis:32.7%;
+    }
+  }
+
+/*=====End Style of Life at MedGenome =====*/
+
+.emply-speak-section{
+  padding: 0 0 50px;
+}
+.emply-speak-section h2{
+  margin:0 0 30px;
+  font-size: 30px;
+  color:#3c2c3c;
+}
+.emply-speak-section p{
+  font-size: 16px;
+}
+.emply-speak-carousel-wrap{
+  padding:50px 0 50px;
+}
+.slide-item .topic-box{
+  background-color:#fafafa;    
+  padding:20px; 
+  min-height:280px;
+}
+.slide-item .topic-box h3{
+  font-size:24px;
+  color:;
+  text-align: right;
+  margin:0;
+}
+.slide-item .topic-box p{
+  font-size:18px;
+  font-weight:300;
+}
+.slide-item .video-box{
+  background-color:lightgray; 
+}
+.emply-speak-carousel-wrap.medgenome-wculture-carousel-wrap .slide-item{
+  margin:0;
+}
+.emply-speak-carousel-wrap.medgenome-wculture-carousel-wrap .owl-buttons{
+  top:35%;  
+}
+.emply-speak-carousel-wrap.medgenome-wculture-carousel-wrap .owl-buttons .owl-prev{
+  background-color:#fafafa !important;
+}
+.emply-speak-carousel-wrap.medgenome-wculture-carousel-wrap .owl-buttons .owl-next{
+  background-color:#fafafa !important;
+}
+@media(min-width:768px){
+  .emply-speak-carousel-wrap .owl-item{
+    width: 720px !important;
+  }
+  .emply-speak-carousel-wrap .slide-item{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right:20px;
+  }
+  .slide-item .topic-box{
+    width: 59.5%;
+  }
+  .slide-item .video-box{
+    width: 39%;
+  }
+}
+@media(min-width:1200px){
+  .emply-speak-carousel-wrap .owl-item{
+    width: 1030px !important;
+  }
+}
+
+/*========== End Style of Careers Page ===========*/
 
 
 

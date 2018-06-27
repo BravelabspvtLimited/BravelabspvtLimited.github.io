@@ -433,7 +433,6 @@ $(document).ready(function() {
   $('.lightbox-img').drags();
 
 
-
   (function(){
 
     const $formInput = $('.inputEmpt');
@@ -558,21 +557,95 @@ $(document).ready(function() {
 
 (function(){
 
-  const $clickPopUp = $('.slide-item');
-  const $modal = $('.modalBox');
+  const $clickPopUp = $('#trgtBodalBox01');
+  const $modal = $('#modalBox01');
   const $close = $('.close');
 
-$clickPopUp.each(function(){
-
-  $(this).click(function(){
+  $clickPopUp.click(function(){
     $modal.css({'display':'block'});
   });
-
   $close.click(function(){
     $modal.css({'display':'none'});
   });
+  
+})();
 
-});
+
+(function(){
+
+  const $clickPopUp = $('#trgtBodalBox02');
+  const $modal = $('#modalBox02');
+  const $close = $('.close');
+
+  $clickPopUp.click(function(){
+    $modal.css({'display':'block'});
+  });
+  $close.click(function(){
+    $modal.css({'display':'none'});
+  });
+  
+})();
+
+
+(function(){
+
+  const $clickPopUp = $('#trgtBodalBox03');
+  const $modal = $('#modalBox03');
+  const $close = $('.close');
+
+  $clickPopUp.click(function(){
+    $modal.css({'display':'block'});
+  });
+  $close.click(function(){
+    $modal.css({'display':'none'});
+  });
+  
+})();
+
+
+(function(){
+
+  const $clickPopUp = $('#trgtBodalBox04');
+  const $modal = $('#modalBox04');
+  const $close = $('.close');
+
+  $clickPopUp.click(function(){
+    $modal.css({'display':'block'});
+  });
+  $close.click(function(){
+    $modal.css({'display':'none'});
+  });
+  
+})();
+
+
+(function(){
+
+  const $clickPopUp = $('#trgtBodalBox05');
+  const $modal = $('#modalBox05');
+  const $close = $('.close');
+
+  $clickPopUp.click(function(){
+    $modal.css({'display':'block'});
+  });
+  $close.click(function(){
+    $modal.css({'display':'none'});
+  });
+  
+})();
+
+(function(){
+
+  const $clickPopUp = $('#trgtBodalBox06');
+  const $modal = $('#modalBox06');
+  const $close = $('.close');
+
+  $clickPopUp.click(function(){
+    $modal.css({'display':'block'});
+  });
+  $close.click(function(){
+    $modal.css({'display':'none'});
+  });
   
 })();
 
