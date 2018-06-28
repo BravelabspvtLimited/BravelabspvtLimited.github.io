@@ -1913,7 +1913,7 @@ box-shadow: 0px -9px 60px 7px rgba(248,248,248,3);
 }
 
 .medgenome-joblist-section{
-  background-color:rgba(248, 248, 248, 0.5);    
+  background-color:rgba(248, 248, 248, 0.9);    
   position: relative;
 }
 .joblist-shadow-box{
@@ -2195,17 +2195,21 @@ box-shadow: 0px 0px 8px -5px rgba(0,0,0,1);
     padding:10px 20px 12px;
     font-size: 14px;
     color:#CCCCCC;
+    cursor: pointer;
   }
-  .job-type-wrap ul .select-type{
+  .job-type-wrap ul li{
     background-color:#fff;
     color:#1A74AE;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
   }
   .job-type-wrap ul .unselect-type{
-    color:#3C3C3C;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    color:rgba(0,0,0,0.3);
+    background-color:rgba(0,0,0,0.0);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   }
-
+  .roles-d-none{
+    display: none;
+  }
   .medgenome-joblist-wrap .container:after{
     clear: both;
     content: "";
@@ -2388,9 +2392,38 @@ box-shadow: 0px 0px 8px -5px rgba(0,0,0,1);
     color: #fff;
    }
 
-
-
-
+  .medgenome-joblist-wrap.jobdetails-wrap.career-job-dtl p{
+    margin-bottom:20px;
+    font-size: 16px;
+    font-weight:300;  
+  }
+  .text-about-job.p-pointer p{
+    position: relative;
+    padding-left:70px;
+  }
+  .text-about-job.p-pointer h4{
+    color:#252525;
+    font-size:16px;
+  }
+  .text-about-job.p-pointer p:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top:0;
+    bottom:0;
+    margin: auto;
+    left:20px;  
+    border:solid 1px gray;  
+    border-radius:50%;
+  }
+  .requisites-text{
+    padding-left:100px; 
+  }
+  .job-dtl-box.successfull-wrap, .job-dtl-box.jobapplyformwrap, .medgenome-joblist-wrap.jobdetails-wrap.career-job-dtl .job-dtl-box{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
   
   @media(min-width:557px){
     .job-apply-btn{
@@ -2639,7 +2672,7 @@ box-shadow: 0px 0px 8px -5px rgba(0,0,0,1);
 .culture-strength-video-wrap{
   position: relative;
   background-color:rgba(0,0,0,0.6);
-  height:600px;
+  height:460px;
 }
 .culture-strength-video-wrap .close{
   width: 30px;
@@ -2648,13 +2681,18 @@ box-shadow: 0px 0px 8px -5px rgba(0,0,0,1);
   border:solid 2px #fff;
   display: block;
   position: absolute;
-  top:20px;
-  right: 20px;
+  top:-60px;
+  right:-140px;
   font-size:25px;
   color:#fff;
   line-height: 25px;
   text-align: center;
   cursor: pointer;
+}
+
+.culture-strength-video-wrap iframe{
+  width:100% !important;
+  height:100% !important;
 }
 
 @media(min-width:768px){
@@ -2747,6 +2785,10 @@ box-shadow: 0px 0px 8px -5px rgba(0,0,0,1);
 .slide-item .video-box{
   background-color:lightgray; 
 }
+.slide-item .video-box iframe{
+  width: 100% !important;
+  height: 100% !important;
+}
 .emply-speak-carousel-wrap.medgenome-wculture-carousel-wrap .slide-item{
   margin:0;
 }
@@ -2759,6 +2801,7 @@ box-shadow: 0px 0px 8px -5px rgba(0,0,0,1);
 .emply-speak-carousel-wrap.medgenome-wculture-carousel-wrap .owl-buttons .owl-next{
   background-color:#fafafa !important;
 }
+
 @media(min-width:768px){
   .emply-speak-carousel-wrap .owl-item{
     width: 720px !important;

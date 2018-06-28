@@ -650,6 +650,41 @@ $(document).ready(function() {
 })();
 
 
+
+
+(function(){
+
+  const $mdgJobType = $('.mdgJobType li');
+  const $jobroles = $('.roles');
+
+    $mdgJobType.each(function(){
+
+      const $this = $(this);
+
+      $this.click(function(){
+        $(this).toggleClass('unselect-type');
+
+        const $typeText = $(this).text().replace(/ +/g, "").toLowerCase();
+        // console.log($typeText);
+
+        $jobroles.each(function(){
+         const $rolesAttr = $(this).attr('rolesTrgt');
+         // console.log($rolesAttr);
+          if($typeText == $rolesAttr){
+            $(this).toggleClass('roles-d-none');
+          }
+
+        });
+
+      });
+
+    });
+
+
+})();
+
+
+
 // ========= Script For Careers Page =======
 
 
