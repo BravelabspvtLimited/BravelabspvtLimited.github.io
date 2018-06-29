@@ -918,12 +918,14 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
 }
 .table-container.whole-exome-table1 tbody td:nth-child(1){
   width: 20%;
+  background-color:#fff;
 } 
 .ngs-services-workflow h3{
   margin: 30px 0 10px;
   font-size: 18px;
   color: #000;
   text-align: center;
+  font-weight:700;
 }
 .ngs-workflow-text p{
   margin:0;
@@ -931,6 +933,13 @@ box-shadow: 0px -2px 35px 0px rgba(0,0,0, 0.2);
   color:#252525;
   text-align: left;
   font-weight:400;
+}
+.whole-pipelineh{
+    margin: 40px 0 20px;
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    font-weight: 700;
 }
 
 
