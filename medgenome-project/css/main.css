@@ -1788,6 +1788,16 @@ transform:rotate(-45deg);
 
 /*=======End Style of Request A Quote PopUp Box =========*/
 
+/*========= Style for informatics page =========*/
+  .informatics-wgs-somatic-workflow{
+    padding:20px 0 50px;
+  }
+  .informatics-wgs-somatic-workflow .wgs-workflow{
+    margin-bottom:70px;
+  }
+
+/*========= End Style of informatics page =========*/
+
 
 
 
@@ -2855,10 +2865,6 @@ box-shadow: 0px 0px 8px -5px rgba(0,0,0,1);
 .career-bnr-heading{
   /*color:#fff !important;*/
 }
-
-
-
-
 
 /*========== End Style of Careers Page ===========*/
 
